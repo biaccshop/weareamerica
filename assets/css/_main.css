@@ -1,0 +1,30 @@
+/* 833px and Lower - Mobile Section */
+@media screen and (max-width: 833px) {
+    .section {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+}
+
+
+
+/* 1068px and Lower - Tablet Section */
+@media screen and (min-width: 834px) and (max-width: 1068px) {
+    .section {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+}
+
+
+
+/* 1069px and Upper - Desktop Section */
+@media screen and (min-width: 1069px) {
+    .section {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+}

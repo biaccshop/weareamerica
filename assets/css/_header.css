@@ -1,0 +1,19 @@
+/* 833px and Lower - Mobile Header */
+@media screen and (max-width: 833px) {
+    .header {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+}
+
+
+
+/* 834px and Upper - Desktop Header */
+@media screen and (min-width: 834px) {
+	.header {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+	}
+}

@@ -1,0 +1,142 @@
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html,
+body,
+ul,
+ol {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    overflow-x: hidden
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+button {
+    border: none;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+figure {
+    margin: 0;
+}
+
+i,
+img {
+    user-select: none;
+    pointer-events: none;
+}
+
+
+
+/* Root Starting */
+:root {
+    /* Colors */
+    --color-primary: #24539d;
+    --color-secondary: #6db5ed;
+    --color-light: #3F4A60;
+    --color-dark: #0A1730;
+    --color-text-light: #e5f4fb;
+    --color-text-dark: #1b2e4d;
+    --color-btn-light: #e42575;
+    --color-btn-dark: #BA2063;
+    /* Gradient colors */
+    --color-gradient-1: linear-gradient(to right, rgb(243, 90, 246) -200%, rgb(48, 78, 235) -100%, rgb(243, 90, 246) 0%, rgb(48, 78, 235) 100%);
+    --color-gradient-2: linear-gradient(to right, rgb(255, 184, 0) -200%, rgb(243, 90, 246) -100%, rgb(255, 184, 0) 0%, rgb(243, 90, 246) 100%);
+    --color-gradient-3: linear-gradient(to right, rgb(255, 241, 116) -200%, rgb(255, 184, 0) -100%, rgb(255, 241, 116) 0%, rgb(255, 184, 0) 100%);
+    --color-gradient-4: linear-gradient(to right, rgb(48, 78, 235) -200%, rgb(65, 217, 251) -100%, rgb(48, 78, 235) 0%, rgb(65, 217, 251) 100%);
+    --color-gradient-5: linear-gradient(to right, rgb(65, 217, 251) -200%, rgb(153, 239, 131) -100%, rgb(65, 217, 251) 0%, rgb(153, 239, 131) 100%);
+    --color-gradient-6: linear-gradient(to right, rgb(153, 239, 131) -200%, rgb(255, 241, 116) -100%, rgb(153, 239, 131) 0%, rgb(255, 241, 116) 100%);
+    /* Other colors */
+    --color-success: #2ecc71;
+    --color-warning: #f1c40f;
+    --color-error: #e74c3c;
+    /* Font weights */
+    --font-weight-normal: 400;
+    --font-weight-bold: 700;
+    --font-weight-black: 900;
+    /* Font families */
+    --font-family-1: 'Lato', sans-serif;
+    --font-family-2: 'Montserrat', sans-serif;
+}
+/* Roots End */
+
+
+
+/* Font Setup Starting */
+html {
+    font-size: 10px;
+    font-family: var(--font-family-1);
+    font-weight: var(--font-weight-normal);
+}
+
+body {
+    background-color: var(--color-primary);
+    font-family: var(--font-family-1);
+    font-weight: var(--font-weight-normal);
+    font-size: 1.6rem;
+    line-height: 1.5;
+    overflow: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-family-2);
+    font-weight: var(--font-weight-bold);
+}
+
+p, a, ul, ol {
+    font-family: var(--font-family-1);
+    font-weight: var(--font-weight-normal);
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+/* Font Setup End */
+
+
+
+/* Scrollbar Starting */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--color-primary);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color-secondary);
+    -webkit-border-radius: 16px;
+    -webkit-box-shadow: 0 1px 2px rgb(0 0 0 / 75%);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--color-secondary);
+}
+/* Scrollbar End */
