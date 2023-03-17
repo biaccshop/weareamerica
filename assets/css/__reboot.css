@@ -5,7 +5,6 @@
     margin: 0;
     outline: none;
     box-sizing: border-box;
-    scroll-behavior: smooth;
 }
 
 html,
@@ -16,8 +15,11 @@ ol {
     margin: 0;
 }
 
-html {
-    overflow-x: hidden
+body {
+    background-color: var(--color-dark);
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
 }
 
 ul,
@@ -59,14 +61,13 @@ img {
 /* Root Starting */
 :root {
     /* Colors */
-    --color-primary: #24539d;
-    --color-secondary: #6db5ed;
-    --color-light: #3F4A60;
-    --color-dark: #0A1730;
-    --color-text-light: #e5f4fb;
-    --color-text-dark: #1b2e4d;
-    --color-btn-light: #e42575;
-    --color-btn-dark: #BA2063;
+    --color-primary: rgb(1, 233, 254);
+    --color-secondary: rgb(0, 145, 158);
+    --color-dark: rgb(19, 21, 25);
+    --color-text-light: rgb(252, 252, 252);
+    --color-text-dark: rgb(140, 141, 143);
+    --color-btn-light: rgb(33, 36, 44);
+    --color-btn-dark: rgb(30, 33, 40);
     /* Gradient colors */
     --color-gradient-1: linear-gradient(to right, rgb(243, 90, 246) -200%, rgb(48, 78, 235) -100%, rgb(243, 90, 246) 0%, rgb(48, 78, 235) 100%);
     --color-gradient-2: linear-gradient(to right, rgb(255, 184, 0) -200%, rgb(243, 90, 246) -100%, rgb(255, 184, 0) 0%, rgb(243, 90, 246) 100%);
@@ -98,12 +99,10 @@ html {
 }
 
 body {
-    background-color: var(--color-primary);
     font-family: var(--font-family-1);
     font-weight: var(--font-weight-normal);
     font-size: 1.6rem;
     line-height: 1.5;
-    overflow: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -118,6 +117,28 @@ p, a, ul, ol {
     line-height: 1.5;
 }
 /* Font Setup End */
+
+
+
+/* Icons and Visuals Starting */
+#menu-icon {
+    font-size: 3.6rem;
+    color: var(--color-text-light);
+    display: none;
+}
+
+#discord-icon {
+    font-size: 1.6rem;
+    color: var(--color-text-light);
+    margin-right: 1rem;
+}
+
+.eclipse {
+    position: absolute;
+    top: -700px;
+    left: -100px;
+}
+/* Icons and Visuals End */
 
 
 

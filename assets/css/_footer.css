@@ -1,6 +1,6 @@
 /* 833px and Lower - Mobile Footer */
 @media screen and (max-width: 833px) {
-    .header {
+    .footer {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
@@ -9,9 +9,20 @@
 
 
 
+/*  834px - 1068px - Tablet Footer */
+@media screen and (min-width: 834px) and (max-width: 1068px) {
+	.footer {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+	}
+}
+
+
+
 /* 834px and Upper - Desktop Footer */
 @media screen and (min-width: 834px) {
-	.header {
+	.footer {
 		display: flex;
 		flex-wrap: wrap;
 		align-items: center;

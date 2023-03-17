@@ -1,30 +1,64 @@
 /* 833px and Lower - Mobile Section */
 @media screen and (max-width: 833px) {
-    .section {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-    }
+
 }
 
 
 
 /* 1068px and Lower - Tablet Section */
 @media screen and (min-width: 834px) and (max-width: 1068px) {
-    .section {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-    }
+
 }
 
 
 
 /* 1069px and Upper - Desktop Section */
 @media screen and (min-width: 1069px) {
-    .section {
+
+    .hero {
+        padding-top: 20rem;
+        min-height: 100vh;
+        color: var(--color-text-light);
         display: flex;
-        flex-wrap: wrap;
+        justify-content: center;
         align-items: center;
+        background-color: var(--color-dark);
+    }
+
+    .hero-content {
+        width: 50%;
+    }
+
+    .hero-content h1 {
+        font-size: 1.8rem;
+        font-weight: var(--font-weight-bold);
+        color: var(--color-primary);
+        margin-bottom: 2rem;
+    }
+
+    .hero-content h2 {
+        font-size: 8rem;
+        font-weight: var(--font-weight-bold);
+        line-height: 1;
+        margin-bottom: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1.9rem;
+        color: var(--color-text-dark);
+        font-weight: var(--font-weight-normal);
+        text-align: left;
+    }
+
+    .hero-img  {
+        width: 50%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .hero-img i img {
+        width: 400px;
+        height: auto;
     }
 }
