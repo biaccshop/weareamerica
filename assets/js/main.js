@@ -36,7 +36,7 @@ ScrollReveal({
     delay: 150
 });
 
-ScrollReveal().reveal('.hero-img, .portfolio2, .service2', {origin: 'top'});
-ScrollReveal().reveal('.hero-content, .question, .portfolio5, .service5', {origin: 'bottom'});
-ScrollReveal().reveal('.about-content, .services-title, .portfolio-title, .faq-title, .portfolio1, .portfolio4, .service1, .service4', {origin: 'left'});
-ScrollReveal().reveal('.about-img, .portfolio3, .portfolio6, .service3, .service6', {origin: 'right'});
+ScrollReveal().reveal('.hero-img', {origin: 'top'});
+ScrollReveal().reveal('.hero-content, .question', {origin: 'bottom'});
+ScrollReveal().reveal('.about-content, .services-title, .portfolio-title, .faq-title', {origin: 'left'});
+ScrollReveal().reveal('.about-img', {origin: 'right'});

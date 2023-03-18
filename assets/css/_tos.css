@@ -1,0 +1,35 @@
+/* Tos section */
+.tos {
+    color: var(--color-text-light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tos-content {
+    width: 100%;
+}
+
+.tos-content h1 {
+    font-size: 1.8rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-primary);
+    margin-bottom: 2rem;
+    padding-top: 5rem;
+}
+
+.tos-content h2 {
+    font-size: 6rem;
+    font-weight: var(--font-weight-black);
+    line-height: 1;
+    margin-bottom: 4rem;
+}
+
+.tos-content p {
+    font-size: 1.8rem;
+    line-height: 1.5;
+    color: var(--color-text-dark);
+    font-weight: var(--font-weight-normal);
+    text-align: left;
+    margin-bottom: 3rem;
+}
