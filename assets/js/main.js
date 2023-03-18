@@ -27,7 +27,6 @@ faqQuestions.forEach((faqQuestion) => {
     });
 });
 
-
 // Scroll Reveal
 ScrollReveal({
     reset: true,
@@ -40,3 +39,10 @@ ScrollReveal().reveal('.hero-img', {origin: 'top'});
 ScrollReveal().reveal('.hero-content, .question', {origin: 'bottom'});
 ScrollReveal().reveal('.about-content, .services-title, .portfolio-title, .faq-title', {origin: 'left'});
 ScrollReveal().reveal('.about-img', {origin: 'right'});
+
+// Console bug
+Object.defineProperty(window, "console", {
+    value: console,
+    writable: false,
+    configurable: false
+  });
