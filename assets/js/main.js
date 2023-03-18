@@ -27,6 +27,7 @@ faqQuestions.forEach((faqQuestion) => {
     });
 });
 
+
 // Scroll Reveal
 ScrollReveal({
     reset: true,
@@ -40,7 +41,7 @@ ScrollReveal().reveal('.hero-content, .question', {origin: 'bottom'});
 ScrollReveal().reveal('.about-content, .services-title, .portfolio-title, .faq-title', {origin: 'left'});
 ScrollReveal().reveal('.about-img', {origin: 'right'});
 
-// Console bug
+
 // Disable right-click
 document.addEventListener('contextmenu', (e) => e.preventDefault());
 
@@ -48,8 +49,8 @@ function ctrlShiftKey(e, keyCode) {
   return e.ctrlKey && e.shiftKey && e.keyCode === keyCode.charCodeAt(0);
 }
 
+// Disable F12, Ctrl + Shift + I, Ctrl + Shift + J, Ctrl + U
 document.onkeydown = (e) => {
-  // Disable F12, Ctrl + Shift + I, Ctrl + Shift + J, Ctrl + U
   if (
     event.keyCode === 123 ||
     ctrlShiftKey(e, 'I') ||

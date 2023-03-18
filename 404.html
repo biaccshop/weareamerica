@@ -27,6 +27,75 @@
     <meta property="og:url" content="https://biacc.shop/">
     <meta name="theme-color" content="#01e9fe">
     <meta name="twitter:card" content="summary_small_image">
+
+    <style>
+        .Errorpage {
+            min-height: 65vh;
+            color: var(--color-text-light);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .Errorpage-content {
+            width: 50%;
+        }
+
+        .Errorpage-content h1 {
+            font-size: 1.8rem;
+            font-weight: var(--font-weight-bold);
+            color: var(--color-primary);
+            margin-bottom: 3rem;
+        }
+
+        .Errorpage-content h2 {
+            font-size: 6rem;
+            font-weight: var(--font-weight-black);
+            line-height: 1;
+            margin-bottom: 4rem;
+        }
+
+        .Errorpage-content p {
+            font-size: 1.8rem;
+            color: var(--color-text-dark);
+            font-weight: var(--font-weight-normal);
+            text-align: left;
+        }
+
+        .Errorpage-content a {
+            margin-right: 2rem;
+            margin-top: 5rem;
+            font-size: 1.65rem;
+        }
+
+        .Errorpage-img {
+            width: 50%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .Errorpage-img i img {
+            width: 500px;
+            height: auto;
+            animation: FloatImage 4s ease-in-out infinite;
+        }
+
+        @keyframes FloatImage {
+            0% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-5rem);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+        }
+    </style>
+
 </head>
 
 <body>
