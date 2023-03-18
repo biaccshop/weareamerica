@@ -1,30 +1,110 @@
 /* 833px and Lower - Mobile Footer */
-@media screen and (max-width: 833px) {
-    .footer {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-    }
-}
+@media screen and (max-width: 833px) {}
 
 
 
 /*  834px - 1068px - Tablet Footer */
-@media screen and (min-width: 834px) and (max-width: 1068px) {
+@media screen and (min-width: 834px) and (max-width: 1068px) {}
+
+
+
+/* 1069px and Upper - Desktop Footer */
+@media screen and (min-width: 1069px) {
 	.footer {
-		display: flex;
-		flex-wrap: wrap;
-		align-items: center;
+		height: 310px;
+		width: 100%;
+		background-color: var(--color-btn-dark);
 	}
-}
 
-
-
-/* 834px and Upper - Desktop Footer */
-@media screen and (min-width: 834px) {
-	.footer {
+	.footer-navigation {
+		height: 210px;
+		width: 100%;
 		display: flex;
-		flex-wrap: wrap;
 		align-items: center;
+		justify-content: space-between;
+		border-bottom: 1px solid var(--color-text-dark);
+	}
+
+	.footer-navigation .item-title {
+		font-size: 1.7rem;
+		line-height: 1.7;
+		color: var(--color-text-light);
+		font-weight: var(--font-weight-bold);
+		text-align: left;
+	}
+
+	.footer-navigation a {
+		font-size: 1.6rem;
+		line-height: 1.7;
+		color: var(--color-text-dark);
+		font-weight: var(--font-weight-bold);
+		transition: 0.3s ease;
+	}
+
+	.footer-navigation a:hover {
+		color: var(--color-text-light);
+		text-shadow: 0 0 8px rgb(252, 252, 252);
+	}
+
+	.footer-navigation i img {
+		height: 70px;
+		width: auto;
+		display: flex;
+	}
+
+	.footer-navigation p {
+		font-size: 1.6rem;
+		line-height: 1.5;
+		color: var(--color-text-dark);
+		font-weight: var(--font-weight-normal);
+	}
+
+	.item-1 {
+		width: 25%;
+		height: 165px;
+	}
+
+	.item-2 {
+		width: 25%;
+		height: 165px;
+	}
+
+	.item-3 {
+		width: 25%;
+		height: 165px;
+	}
+
+	.item-4 {
+		width: 25%;
+		height: 165px;
+	}
+
+
+
+
+
+	.footer-copyright {
+		height: 100px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.footer-copyright .copyright-text p,
+	a {
+		font-size: 1.6rem;
+		color: var(--color-text-dark);
+		font-weight: var(--font-weight-normal);
+		text-align: left;
+	}
+
+	.footer-copyright .payment-methods {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.copyright .payment-methods i img {
+		margin-left: 1rem;
 	}
 }

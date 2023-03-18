@@ -1,12 +1,8 @@
 /* 833px and Lower - Mobile Header */
-@media screen and (max-width: 833px) {
-
-}
+@media screen and (max-width: 833px) {}
 
 /*  834px - 1068px - Tablet Header */
-@media screen and (min-width: 834px) and (max-width: 1068px) {
-
-}
+@media screen and (min-width: 834px) and (max-width: 1068px) {}
 
 /* 1069px and Upper - Desktop Header */
 @media screen and (min-width: 1069px) {
@@ -45,8 +41,7 @@
         transition: 0.3s ease;
     }
 
-    .navigation nav a:hover,
-    .navigation nav a.active {
+    .navigation nav a:hover {
         color: var(--color-text-light);
         text-shadow: 0 0 8px rgb(252, 252, 252);
     }
