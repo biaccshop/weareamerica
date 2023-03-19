@@ -1,47 +1,170 @@
-/* 833px and Lower - Mobile Header */
-@media screen and (max-width: 833px) {}
-
-/*  834px - 1068px - Tablet Header */
-@media screen and (min-width: 834px) and (max-width: 1068px) {}
-
 /* 1069px and Upper - Desktop Header */
-@media screen and (min-width: 1069px) {
-    .header {
-        height: 15rem;
-        padding-top: 2.5rem;
-        align-items: center;
+.header {
+    height: 15rem;
+    padding-top: 2.5rem;
+    align-items: center;
+}
+
+.navigation {
+    z-index: 100;
+    height: 10rem;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: var(--color-btn-dark);
+    justify-content: space-between;
+    border-radius: 50px;
+    padding: 0 3.5rem;
+    box-shadow: 0 0 75px rgb(0, 0, 0);
+}
+
+.navigation .logo {
+    height: 8rem;
+    width: auto;
+    display: flex;
+}
+
+.navigation .navbar a {
+    margin-left: 4rem;
+    font-size: 1.7rem;
+    color: var(--color-text-dark);
+    font-weight: var(--font-weight-bold);
+    transition: 0.3s ease;
+}
+
+.navigation .navbar a:hover {
+    color: var(--color-text-light);
+    text-shadow: 0 0 8px rgb(252, 252, 252);
+}
+
+.nav-right {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#black-bar {
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-dark);
+    display: none;
+}
+
+#nav-blackbar {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 5rem 1rem;
+}
+
+#nav-blackbar a {
+    line-height: 2;
+    margin-left: 4rem;
+    font-size: 2.4rem;
+    color: var(--color-text-light);
+    font-weight: var(--font-weight-black);
+}
+
+
+/*  834px - 1068px - Laptop Header */
+@media screen and (min-width: 834px) and (max-width: 1068px) {
+
+    #btn-blackbar {
+        z-index: 101;
+        display: block;
+    }
+
+    .navigation .navbar {
+        display: none;
     }
 
     .navigation {
-        z-index: 100;
-        height: 10rem;
-        width: 100%;
+        position: fixed;
+        width: calc(100% - 8rem);
+        height: 8rem;
+        padding: 0 4.5rem;
+    }
+
+    .navigation .logo {
+        height: 7rem;
+    }
+
+    .nav-right {
         display: flex;
         flex-wrap: wrap;
+        flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        background-color: var(--color-btn-dark);
-        border-radius: 50px;
-        padding: 0 2.5rem;
-        box-shadow: 0 0 75px rgb(0, 0, 0);
+        width: 23rem;
+    }
+}
+
+
+/*  576px - 833px - Tablet Header */
+@media screen and (min-width: 576px) and (max-width: 833px) {
+
+    #btn-blackbar {
+        z-index: 100;
+        display: block;
     }
 
-    .navigation i img {
-        height: 70px;
-        width: auto;
+    .navigation .navbar {
+        display: none;
+    }
+
+    .navigation {
+        position: fixed;
+        width: calc(100% - 8rem);
+        height: 8rem;
+        padding: 0 4.5rem;
+    }
+
+    .navigation .logo {
+        height: 7rem;
+    }
+
+    .nav-right {
         display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 19.5rem;
+    }
+}
+
+/*  575px and Lower - Mobile Header */
+@media screen and (max-width: 575px) {
+
+    #btn-blackbar {
+        z-index: 100;
+        display: block;
     }
 
-    .navigation nav a {
-        margin-left: 40px;
-        font-size: 1.7rem;
-        color: var(--color-text-dark);
-        font-weight: var(--font-weight-bold);
-        transition: 0.3s ease;
+    .navigation .navbar {
+        display: none;
     }
 
-    .navigation nav a:hover {
-        color: var(--color-text-light);
-        text-shadow: 0 0 8px rgb(252, 252, 252);
+    .navigation {
+        position: fixed;
+        width: calc(100% - 8rem);
+        height: 5rem;
+        padding: 0 2.5rem;
+    }
+
+    .navigation .logo {
+        height: 4rem;
+    }
+
+    .navigation #btn-discord {
+        display: none;
     }
 }
