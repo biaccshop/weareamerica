@@ -106,9 +106,11 @@
     }
 }
 
+/*
 .as-seen-on .card:hover {
     transform: scale(1.02);
 }
+*/
 
 .as-seen-on .card i img {
     height: 60px;
@@ -455,7 +457,7 @@
 }
 
 .faq-container {
-    width: 70%;
+    width: 80%;
 }
 
 .question {
@@ -474,8 +476,13 @@
     transition: background-color 0.3s ease;
 }
 
+.question:hover {
+    box-shadow: 0 0 30px var(--color-secondary);
+}
+
 .question.active {
     background-color: var(--color-secondary);
+    box-shadow: 0 0 30px var(--color-secondary);
     color: var(--color-text-light);
     font-size: 1.8rem;
     font-weight: var(--font-weight-bold);
@@ -503,6 +510,7 @@
 .answer.active {
     height: 6.7rem;
     max-height: 20rem;
+    box-shadow: 0 0 30px var(--color-secondary);
 }
 
 .downarrow-icon {

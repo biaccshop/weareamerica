@@ -89,21 +89,10 @@
     .navigation {
         position: fixed;
         width: calc(100% - 8rem);
-        height: 8rem;
-        padding: 0 4.5rem;
-    }
-
-    .navigation .logo {
-        height: 7rem;
     }
 
     .nav-right {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        width: 23rem;
+        width: 25.5rem;
     }
 }
 
@@ -112,7 +101,7 @@
 @media screen and (min-width: 576px) and (max-width: 833px) {
 
     #btn-blackbar {
-        z-index: 100;
+        z-index: 101;
         display: block;
     }
 
@@ -123,8 +112,6 @@
     .navigation {
         position: fixed;
         width: calc(100% - 8rem);
-        height: 8rem;
-        padding: 0 4.5rem;
     }
 
     .navigation .logo {
@@ -132,12 +119,7 @@
     }
 
     .nav-right {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        width: 19.5rem;
+        width: 25.5rem;
     }
 }
 
@@ -145,7 +127,7 @@
 @media screen and (max-width: 575px) {
 
     #btn-blackbar {
-        z-index: 100;
+        z-index: 101;
         display: block;
     }
 
@@ -156,12 +138,12 @@
     .navigation {
         position: fixed;
         width: calc(100% - 8rem);
-        height: 5rem;
+        height: 7rem;
         padding: 0 2.5rem;
     }
 
     .navigation .logo {
-        height: 4rem;
+        height: 4.5rem;
     }
 
     .navigation #btn-discord {
