@@ -146,23 +146,3 @@
     right: 0;
 }
 /* Visuals End */
-
-
-/*  834px - 1068px - Laptop Buttons and Icons */
-@media screen and (min-width: 834px) and (max-width: 1068px) {
-
-
-}
-
-
-/*  576px - 833px - Tablet Buttons and Icons */
-@media screen and (min-width: 576px) and (max-width: 833px) {
-
-
-}
-
-/*  575px and Lower - Mobile Buttons and Icons */
-@media screen and (max-width: 575px) {
-
-
-}
