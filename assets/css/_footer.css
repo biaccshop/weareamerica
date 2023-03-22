@@ -119,10 +119,12 @@ a {
 	/* Navigation Section */
 	.footer-navigation .item-title {
 		font-size: 1.6rem;
+		line-height: 2;
 	}
 
 	.footer-navigation a {
 		font-size: 1.4rem;
+		line-height: 2;
 	}
 
 	.footer-navigation p {
@@ -167,10 +169,12 @@ a {
 
 	.footer-navigation .item-title {
 		font-size: 1.6rem;
+		line-height: 2.2
 	}
 
 	.footer-navigation a {
 		font-size: 1.4rem;
+		line-height: 2.2
 	}
 
 	.footer-navigation .item-3,

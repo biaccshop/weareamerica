@@ -554,7 +554,12 @@
     }
 
     /*  Hero Section */
+    .hero {
+        padding: 5rem 0 10rem 0;
+    }
+
     .hero-content {
+        
         padding-right: 2rem;
     }
 
@@ -596,7 +601,7 @@
 
     /*  Hero Section */
     .hero {
-        padding: 10rem 0 10rem 0;
+        padding: 0 0 10rem 0;
     }
 
     .hero-content {
@@ -676,7 +681,7 @@
 
     /*  Hero Section */
     .hero {
-        padding: 5rem 0 5rem 0;
+        padding: 0 0 5rem 0;
     }
 
     .hero-content {
