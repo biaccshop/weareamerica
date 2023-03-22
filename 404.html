@@ -29,6 +29,190 @@
     <meta name="twitter:card" content="summary_small_image">
 
     <style>
+        /* General site settings Starting */
+        *,
+        *::after,
+        *::before {
+            padding: 0;
+            margin: 0;
+            outline: none;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+            scroll-padding-top: 0rem;
+        }
+
+        html,
+        body,
+        ul,
+        ol {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            overflow-x: hidden;
+        }
+
+        ul,
+        ol {
+            list-style: none;
+        }
+
+        button {
+            border: none;
+        }
+
+        a {
+            display: inline-block;
+            text-decoration: none;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p {
+            margin: 0;
+        }
+
+        figure {
+            margin: 0;
+        }
+
+        i,
+        img {
+            user-select: none;
+            pointer-events: none;
+        }
+
+        /* General site settings End */
+
+
+
+        /* Root Starting */
+        :root {
+            /* Colors */
+            --color-primary: rgb(1, 233, 254);
+            --color-secondary: rgb(0, 145, 158);
+            --color-dark: rgb(19, 21, 25);
+            --color-text-light: rgb(252, 252, 252);
+            --color-text-dark: rgb(140, 141, 143);
+            --color-text-hover: rgb(203, 203, 204);
+            --color-btn-light: rgb(33, 36, 44);
+            --color-btn-dark: rgb(30, 33, 40);
+            /* Gradient colors */
+            --color-gradient-1: linear-gradient(to right, rgb(243, 90, 246) -200%, rgb(48, 78, 235) -100%, rgb(243, 90, 246) 0%, rgb(48, 78, 235) 100%);
+            --color-gradient-2: linear-gradient(to right, rgb(255, 184, 0) -200%, rgb(243, 90, 246) -100%, rgb(255, 184, 0) 0%, rgb(243, 90, 246) 100%);
+            --color-gradient-3: linear-gradient(to right, rgb(255, 241, 116) -200%, rgb(255, 184, 0) -100%, rgb(255, 241, 116) 0%, rgb(255, 184, 0) 100%);
+            --color-gradient-4: linear-gradient(to right, rgb(48, 78, 235) -200%, rgb(65, 217, 251) -100%, rgb(48, 78, 235) 0%, rgb(65, 217, 251) 100%);
+            --color-gradient-5: linear-gradient(to right, rgb(65, 217, 251) -200%, rgb(153, 239, 131) -100%, rgb(65, 217, 251) 0%, rgb(153, 239, 131) 100%);
+            --color-gradient-6: linear-gradient(to right, rgb(153, 239, 131) -200%, rgb(255, 241, 116) -100%, rgb(153, 239, 131) 0%, rgb(255, 241, 116) 100%);
+            /* Other colors */
+            --color-success: #2ecc71;
+            --color-warning: #f1c40f;
+            --color-error: #e74c3c;
+            /* Font weights */
+            --font-weight-normal: 400;
+            --font-weight-bold: 700;
+            --font-weight-black: 900;
+            /* Font families */
+            --font-family-1: 'Lato', sans-serif;
+            --font-family-2: 'Montserrat', sans-serif;
+        }
+
+        /* Roots End */
+
+
+
+        /* Scrollbar Starting */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--color-btn-light);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--color-secondary);
+            -webkit-border-radius: 50px;
+            -webkit-box-shadow: 0 2px 5px var(--color-dark);
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--color-primary);
+        }
+
+        /* Scrollbar End */
+
+
+
+        /* Font Setup Starting */
+        html {
+            font-size: 10px;
+            font-family: var(--font-family-1);
+            font-weight: var(--font-weight-normal);
+        }
+
+        body {
+            font-family: var(--font-family-1);
+            font-weight: var(--font-weight-normal);
+            font-size: 1.6rem;
+            line-height: 1.5;
+            background-color: var(--color-dark);
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: var(--font-family-2);
+            font-weight: var(--font-weight-bold);
+        }
+
+        p,
+        a,
+        ul,
+        ol {
+            font-family: var(--font-family-1);
+            font-weight: var(--font-weight-normal);
+            font-size: 1.6rem;
+            line-height: 1.5;
+        }
+
+        /* Font Setup End */
+
+
+
+        /*  834px - 1068px - Laptop Fonts */
+        @media screen and (min-width: 834px) and (max-width: 1068px) {
+            body {
+                font-size: 1.4rem;
+            }
+        }
+
+
+        /*  576px - 833px - Tablet Fonts */
+        @media screen and (min-width: 576px) and (max-width: 833px) {
+            body {
+                font-size: 1.1rem;
+            }
+        }
+
+        /*  575px and Lower - Mobile Fonts */
+        @media screen and (max-width: 575px) {
+            body {
+                font-size: 0.8rem;
+            }
+
+        }
+
+
+
         /* Button */
         .btn {
             display: inline-block;
