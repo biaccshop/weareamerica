@@ -3,6 +3,7 @@
 @import './__grid.css';
 @import './__utilities.css';
 @import './__buttons-icons.css';
+@import './_header.css';
 @import './_main.css';
 @import './_footer.css';
 @import './_404.css';
