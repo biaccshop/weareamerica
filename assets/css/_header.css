@@ -138,6 +138,11 @@
 /*  575px and Lower - Mobile Header */
 @media screen and (max-width: 575px) {
 
+    body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
     #btn-blackbar {
         z-index: 101;
         display: block;

@@ -160,6 +160,11 @@ a {
 @media screen and (max-width: 575px) {
 
 	/* Navigation Section */
+	.footer-navigation {
+		align-items: center;
+		justify-content: center;
+	}
+
 	.footer-navigation .item-title {
 		font-size: 1.6rem;
 	}
@@ -168,20 +173,14 @@ a {
 		font-size: 1.4rem;
 	}
 
-	.footer-navigation p {
-		font-size: 1.2rem;
-	}
-
-	.footer-navigation i img {
-		height: 5rem;
-	}
-
-	.footer-navigation .item-3 {
+	.footer-navigation .item-3,
+	.footer-navigation .item-4 {
 		display: none;
 	}
 
-	.footer-navigation .item-4 {
-		width: 40%;
+	.footer-navigation .item-1,
+	.footer-navigation .item-2 {
+		width: 50%;
 	}
 
 
