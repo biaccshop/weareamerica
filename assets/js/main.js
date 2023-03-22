@@ -75,7 +75,7 @@ ScrollReveal().reveal('.about-content .d3', { origin: 'bottom', delay: 900 });
 ScrollReveal().reveal('.services-title', { origin: 'left' });
 ScrollReveal().reveal('.services-payments', { origin: 'bottom' });
 
-ScrollReveal().reveal('.portfolio-title', { origin: 'left' });
+ScrollReveal().reveal('.portfolio-title', { origin: 'top' });
 
 ScrollReveal().reveal('.faq-title', { origin: 'top' });
 ScrollReveal().reveal('.question', { origin: 'bottom', delay: 700 });

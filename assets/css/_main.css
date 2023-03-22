@@ -1,8 +1,7 @@
 /* 1069px and Upper - Desktop Sections */
 /* Hero section */
 .hero {
-    min-height: 94rem;
-    margin-top: -15rem;
+    padding: 10rem 0 15rem 0;
     color: var(--color-text-light);
     display: flex;
     justify-content: center;
@@ -49,7 +48,7 @@
 }
 
 .hero-img i img {
-    width: 500px;
+    width: 45rem;
     height: auto;
     animation: FloatImage 3s ease-in-out infinite;
 }
@@ -70,6 +69,7 @@
 
 /* As Seen On section */
 .as-seen-on {
+    padding: 5rem 0 10rem 0;
     width: 100%;
     display: flex;
     align-items: center;
@@ -112,16 +112,20 @@
 }
 */
 
+.as-seen-on .card a {
+    width: calc(100% / 3);
+}
+
 .as-seen-on .card i img {
-    height: 60px;
-    width: auto;
-    display: flex;
+    width: 100%;
+    height: auto;
 }
 
 
 /* About section */
 .about {
-    min-height: 94rem;
+    padding: 10rem 0;
+    min-height: 74rem;
     color: var(--color-text-light);
     display: flex;
     justify-content: center;
@@ -222,9 +226,7 @@
 
 /* Services section */
 .services {
-    min-height: 115rem;
-    padding-top: 10rem;
-    position: relative;
+    padding: 10rem 0;
     color: var(--color-text-light);
 }
 
@@ -257,7 +259,6 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 7.5rem;
-    min-height: 20rem;
 }
 
 .services-content .services-box {
@@ -305,31 +306,50 @@
     margin-top: 2rem;
 }
 
-.services-payments {
-    width: 100%;
+
+
+/* Payments section */
+.payments {
+    padding-bottom: 10rem;
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    position: absolute;
-    bottom: 0;
 }
 
-.services-payments h4 {
+.payments .payments-title {
+    display: flex;
+    flex-basis: 39.5rem;
+    /* Her div'in başlangıç genişliği */
+    flex-grow: 0;
+    /* Sağ ve sol div'lerin genişlemesi */
+}
+
+.payments .payments-line {
+    flex-basis: calc(100% - 72.5rem);
+    /* Ortadaki div'in başlangıç genişliği */
+    padding: 2px;
+    border-radius: 50px;
+    background-color: var(--color-btn-dark);
+}
+
+.payments .payments-crypto {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 5px;
+    flex-basis: 33rem;
+    /* Her div'in başlangıç genişliği */
+    flex-grow: 0;
+    /* Sağ ve sol div'lerin genişlemesi */
+}
+
+.payments h4 {
     font-size: 1.8rem;
     font-weight: var(--font-weight-bold);
     color: var(--color-text-light);
     margin-bottom: 3px;
 }
 
-.services-payments #line {
-    width: 450px;
-    height: 3px;
-    border-radius: 50px;
-    margin-bottom: 5px;
-}
-
-.services-payments .services-coin {
+.payments .coin {
     height: 3.2rem;
     width: auto;
     margin-left: 0.5rem;
@@ -339,7 +359,6 @@
 
 /* Portfolio section */
 .portfolio {
-    min-height: 94rem;
     padding: 10rem 0;
 }
 
@@ -347,7 +366,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: left;
+    align-items: center;
 }
 
 .portfolio-title h3 {
@@ -368,10 +387,11 @@
 
 
 .portfolio-content {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    justify-content: center;
     align-items: center;
-    gap: 7.5rem;
+    flex-wrap: wrap;
+    gap: 3rem;
 }
 
 .portfolio-content .portfolio-box {
@@ -454,6 +474,7 @@
     color: var(--color-text-light);
     line-height: 1;
     margin-bottom: 4rem;
+    text-align: center;
 }
 
 .faq-container {
@@ -526,12 +547,220 @@
 
 
 /*  834px - 1068px - Laptop Sections */
-@media screen and (min-width: 834px) and (max-width: 1068px) {}
+@media screen and (min-width: 834px) and (max-width: 1068px) {
+
+    html {
+        font-size: 60%;
+    }
+
+    /*  Hero Section */
+    .hero-content {
+        padding-right: 2rem;
+    }
+
+    .hero-content .btn {
+        width: 16.5rem;
+        font-size: 1.6rem;
+    }
+
+    .hero-img i img {
+        width: 40rem;
+        height: auto;
+    }
+
+    /*  As Seen On Section */
+    .as-seen-on .card {
+        height: 12rem;
+    }
+
+    /* About section */
+    .about-content {
+        padding-right: 2rem;
+    }
+
+    .about-img i img {
+        width: 35rem;
+        height: auto;
+    }
+}
+
 
 
 /*  576px - 833px - Tablet Sections */
-@media screen and (min-width: 576px) and (max-width: 833px) {}
+@media screen and (min-width: 576px) and (max-width: 833px) {
+
+    /*  Hero Section */
+    .hero {
+        padding: 10rem 0 10rem 0;
+    }
+
+    .hero-content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero-img {
+        display: none;
+    }
+
+    .hero-content a {
+        margin-right: 0;
+        margin-top: 4.5rem;
+        width: 100%;
+    }
+
+    /*  As Seen On Section */
+    .as-seen-on {
+        padding: 5rem 0 5rem 0;
+    }
+
+    .as-seen-on .card {
+        height: auto;
+        max-height: 30rem;
+    }
+
+    .as-seen-on .card a {
+        width: 51%;
+    }
+
+    /* About section */
+    .about-content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-img {
+        display: none;
+    }
+
+    /* Payments section */
+    .payments {
+        flex-direction: column;
+    }
+
+    .payments .payments-title {
+        flex-basis: 0;
+        padding-bottom: 2rem;
+    }
+
+    .payments .payments-crypto {
+        flex-basis: 0;
+    }
+
+    .payments .payments-line {
+        display: none;
+    }
+
+    /*  FAQ Section */
+    .faq-container {
+        width: 100%;
+    }
+}
+
 
 
 /*  575px and Lower - Mobile Sections */
-@media screen and (max-width: 575px) {}
+@media screen and (max-width: 575px) {
+
+    /*  Hero Section */
+    .hero {
+        padding: 5rem 0 5rem 0;
+    }
+
+    .hero-content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero-content h2 {
+        font-size: 5.3rem;
+    }
+
+    .hero-img {
+        display: none;
+    }
+
+    .hero-content a {
+        margin-right: 0;
+        margin-top: 3.5rem;
+        width: 100%;
+    }
+
+    /*  As Seen On Section */
+    .as-seen-on {
+        padding: 5rem 0 5rem 0;
+    }
+
+    .as-seen-on .card {
+        height: auto;
+        max-height: 30rem;
+    }
+
+    .as-seen-on .card a {
+        width: 51%;
+    }
+
+    /* About section */
+    .about-content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-content h2 {
+        font-size: 3.5rem;
+    }
+
+    .about-img {
+        display: none;
+    }
+
+    /* Services section */
+    .services-content .services-box {
+        height: 33rem;
+        flex: 0 0 33rem;
+    }
+
+    /* Payments section */
+    .payments {
+        flex-direction: column;
+    }
+
+    .payments .payments-title {
+        flex-basis: 0;
+        padding-bottom: 2rem;
+    }
+
+    .payments .payments-crypto {
+        flex-basis: 0;
+    }
+
+    .payments .payments-line {
+        display: none;
+    }
+
+    .payments h4 {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .payments .coin {
+        height: 2.7rem;
+    }
+
+    /*  FAQ Section */
+    .faq-container {
+        width: 100%;
+    }
+
+    .answer {
+        height: 10.5rem;
+    }
+
+    .answer.active {
+        height: 10.5rem;
+    }
+}
