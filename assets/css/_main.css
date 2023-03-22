@@ -408,7 +408,7 @@
 .portfolio-box:hover {
     transform: scale(2);
     box-shadow: 0 0 30px var(--color-secondary);
-    z-index: 100;
+    z-index: 99;
 }
 
 .portfolio-box i img {
