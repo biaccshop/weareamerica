@@ -589,6 +589,11 @@
 /*  576px - 833px - Tablet Sections */
 @media screen and (min-width: 576px) and (max-width: 833px) {
 
+    /* Visual Eclipses */
+    #eclipse3, #eclipse4 {
+        display: none;
+    }
+
     /*  Hero Section */
     .hero {
         padding: 10rem 0 10rem 0;
@@ -663,6 +668,11 @@
 
 /*  575px and Lower - Mobile Sections */
 @media screen and (max-width: 575px) {
+
+    /* Visual Eclipses */
+    #eclipse3, #eclipse4 {
+        display: none;
+    }
 
     /*  Hero Section */
     .hero {
