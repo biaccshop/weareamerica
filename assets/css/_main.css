@@ -1,4 +1,5 @@
 /* 1069px and Upper - Desktop Sections */
+
 /* Hero section */
 .hero {
     padding: 10rem 0 15rem 0;
@@ -319,14 +320,11 @@
 .payments .payments-title {
     display: flex;
     flex-basis: 39.5rem;
-    /* Her div'in başlangıç genişliği */
     flex-grow: 0;
-    /* Sağ ve sol div'lerin genişlemesi */
 }
 
 .payments .payments-line {
     flex-basis: calc(100% - 72.5rem);
-    /* Ortadaki div'in başlangıç genişliği */
     padding: 2px;
     border-radius: 50px;
     background-color: var(--color-btn-dark);
@@ -337,9 +335,7 @@
     justify-content: flex-end;
     padding-top: 5px;
     flex-basis: 33rem;
-    /* Her div'in başlangıç genişliği */
     flex-grow: 0;
-    /* Sağ ve sol div'lerin genişlemesi */
 }
 
 .payments h4 {
@@ -488,7 +484,7 @@
     padding: 0 2rem;
     margin-top: 2rem;
     cursor: pointer;
-    height: 6.7rem;
+    height: 7rem;
     border-radius: 12px;
     color: var(--color-text-light);
     font-size: 1.8rem;
@@ -512,13 +508,13 @@
 }
 
 .answer {
-    padding: 0 2rem;
+    height: 7rem;
+    max-height: 0rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-height: 0rem;
     overflow: hidden;
-    height: 6.7rem;
+    padding: 0 2rem;
     border-bottom-right-radius: 16px;
     border-bottom-left-radius: 16px;
     font-size: 1.6rem;
@@ -529,17 +525,19 @@
 }
 
 .answer.active {
-    height: 6.7rem;
+    height: 7rem;
     max-height: 20rem;
     box-shadow: 0 0 30px var(--color-secondary);
 }
 
 .downarrow-icon {
-    transition: transform 0.3s ease;
+    padding-bottom: 5px;
+    transition: transform 0.5s ease;
 }
 
 .question.active .downarrow-icon {
-    transform: rotate(540deg);
+    transform: translateY(-6px) rotate(180deg);
+    transform-origin: center;
 }
 
 
@@ -559,7 +557,7 @@
     }
 
     .hero-content {
-        
+
         padding-right: 2rem;
     }
 
@@ -595,7 +593,8 @@
 @media screen and (min-width: 576px) and (max-width: 833px) {
 
     /* Visual Eclipses */
-    #eclipse3, #eclipse4 {
+    #eclipse3,
+    #eclipse4 {
         display: none;
     }
 
@@ -675,7 +674,8 @@
 @media screen and (max-width: 575px) {
 
     /* Visual Eclipses */
-    #eclipse3, #eclipse4 {
+    #eclipse3,
+    #eclipse4 {
         display: none;
     }
 
