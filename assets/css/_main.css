@@ -1,5 +1,38 @@
 /* 1069px and Upper - Desktop Sections */
 
+/* Visuals Starting */
+#eclipse-top {
+    position: absolute;
+    top: -150px;
+    left: 0;
+    z-index: -1;
+}
+
+#eclipse-left1 {
+    position: absolute;
+    top: 1200px;
+    left: 0;
+}
+
+#eclipse-left2 {
+    position: absolute;
+    display: none;
+}
+
+#eclipse-right1 {
+    position: absolute;
+    top: 200px;
+    right: 0;
+}
+
+#eclipse-right2 {
+    position: absolute;
+    top: 3000px;
+    right: 0;
+}
+/* Visuals End */
+
+
 /* Hero section */
 .hero {
     padding: 10rem 0 15rem 0;
@@ -593,8 +626,15 @@
 @media screen and (min-width: 576px) and (max-width: 833px) {
 
     /* Visual Eclipses */
-    #eclipse3,
-    #eclipse4 {
+    #eclipse-left2 {
+        display: block;
+        top: -45rem;
+        left: 0;
+    }
+
+    #eclipse-top,
+    #eclipse-right1,
+    #eclipse-right2 {
         display: none;
     }
 
@@ -674,8 +714,15 @@
 @media screen and (max-width: 575px) {
 
     /* Visual Eclipses */
-    #eclipse3,
-    #eclipse4 {
+    #eclipse-left2 {
+        display: block;
+        top: -45rem;
+        left: 0;
+    }
+
+    #eclipse-top,
+    #eclipse-right1,
+    #eclipse-right2 {
         display: none;
     }
 
