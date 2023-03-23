@@ -114,10 +114,6 @@
     .Errorpage-img {
         display: none;
     }
-
-    .tos .tos-content h2 {
-        font-size: 5rem;
-    }
 }
 
 
@@ -155,9 +151,5 @@
 
     .Errorpage-img {
         display: none;
-    }
-
-    .tos .tos-content h2 {
-        font-size: 3rem;
     }
 }
