@@ -14,11 +14,6 @@
     left: 0;
 }
 
-#eclipse-left2 {
-    position: absolute;
-    display: none;
-}
-
 #eclipse-right1 {
     position: absolute;
     top: 200px;
@@ -30,7 +25,6 @@
     top: 3000px;
     right: 0;
 }
-/* Visuals End */
 
 
 /* Hero section */
@@ -625,14 +619,9 @@
 /*  576px - 833px - Tablet Sections */
 @media screen and (min-width: 576px) and (max-width: 833px) {
 
-    /* Visual Eclipses */
-    #eclipse-left2 {
-        display: block;
-        top: -45rem;
-        left: 0;
-    }
-
+    /* Visuals Starting */
     #eclipse-top,
+    #eclipse-left1,
     #eclipse-right1,
     #eclipse-right2 {
         display: none;
@@ -713,14 +702,9 @@
 /*  575px and Lower - Mobile Sections */
 @media screen and (max-width: 575px) {
 
-    /* Visual Eclipses */
-    #eclipse-left2 {
-        display: block;
-        top: -45rem;
-        left: 0;
-    }
-
+    /* Visuals Starting */
     #eclipse-top,
+    #eclipse-left1,
     #eclipse-right1,
     #eclipse-right2 {
         display: none;
