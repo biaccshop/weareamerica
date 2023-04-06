@@ -31,3 +31,6 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/v4-shims.min.css');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/v5-font-face.css');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/v5-font-face.min.css');
+
+/* Sellix - Sellix Integration */
+@import url('https://cdn.sellix.io/static/css/embed.css');
