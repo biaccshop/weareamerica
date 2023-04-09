@@ -583,14 +583,9 @@
         padding: 5rem 0 10rem 0;
     }
 
-    .hero-content {
-
-        padding-right: 2rem;
-    }
-
     .hero-content .btn {
-        width: 16.5rem;
-        font-size: 1.6rem;
+        width: 17.5rem;
+        font-size: 1.5rem;
     }
 
     .hero-img i img {
