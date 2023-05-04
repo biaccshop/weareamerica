@@ -116,7 +116,7 @@
     border-radius: 12px;
     padding: 0 2.5rem;
     transition: 0.5s;
-    box-shadow: 0 0 30px var(--color-secondary);
+    box-shadow: 0 0 20px var(--color-secondary);
     animation: FloatImage3 3s ease-in-out infinite;
 }
 
@@ -304,8 +304,8 @@
 }
 
 .services-content .services-box:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 30px var(--color-secondary);
+    transform: scale(1.05);
+    box-shadow: 0 0 20px var(--color-secondary);
 }
 
 .services-content .services-box .title-icon {
@@ -385,6 +385,13 @@
     padding: 10rem 0;
 }
 
+.portfolio-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .portfolio-title {
     display: flex;
     flex-direction: column;
@@ -404,68 +411,119 @@
     font-weight: var(--font-weight-black);
     color: var(--color-text-light);
     line-height: 1;
-    margin-bottom: 6rem;
+}
+
+.category-filter-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6rem 0;
+}
+
+.category-filter {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
 }
 
 
 
 .portfolio-content {
+    color: var(--color-text-light);
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
-    gap: 3rem;
+    gap: 6rem;
 }
 
-.portfolio-content .portfolio-box {
-    position: relative;
-    border-radius: 16px;
-    overflow: hidden;
+.portfolio-box {
     display: flex;
-    height: 17.5rem;
-    width: 35rem;
-    transition: 0.5s;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--color-dark);
+    border-radius: 16px;
+    transition: opacity 0.3s, transform 0.3s, box-shadow 0.3s;
     cursor: pointer;
+    opacity: 1;
+}
+
+.box-website {
+    height: 18rem;
+    flex: 0 0 36rem;
+}
+
+.box-discordserver {
+    height: 42rem;
+    flex: 0 0 36rem;
+}
+
+.box-graphics {
+    height: 48rem;
+    flex: 0 0 36rem;
 }
 
 .portfolio-box:hover {
     transform: scale(2);
-    box-shadow: 0 0 30px var(--color-secondary);
+    box-shadow: 0 0 20px var(--color-secondary);
+    transition: opacity 0.3s, transform 0.3s, box-shadow 0.3s;
     z-index: 99;
 }
 
-.portfolio-box i img {
-    width: 100%;
+.portfolio-box:hover .portfolio-text {
+    opacity: 0;
 }
 
-.portfolio-box .portfolio-layer {
+.portfolio-box a {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+    background-color: var(--color-btn-light);
+}
+
+.portfolio-box .portfolio-img {
+    width: 100%;
+    height: 100%;
+}
+
+.portfolio-box .portfolio-img i img {
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+}
+
+.portfolio-box .portfolio-text {
     position: absolute;
     bottom: 0;
     left: 0;
+    padding: 0 1.5rem;
     width: 100%;
-    height: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.1), var(--color-primary));
+    height: 30%;
+    opacity: 100;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    text-align: center;
-    padding: 0 4rem;
-    transform: translateY(100%);
+    align-items: left;
+    justify-content: center;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: opacity 0.3s;
 }
 
-.portfolio-layer h4 {
-    margin-top: 2rem;
-    font-size: 1.8rem;
+.portfolio-text .brand-name {
+    color: var(--color-text-light);
     font-weight: var(--font-weight-bold);
-    color: var(--color-text-light);
+    font-size: 1.6rem;
 }
 
-.portfolio-layer p {
-    margin-top: 1rem;
-    font-size: 1.8rem;
-    color: var(--color-text-light);
+.portfolio-text .work {
+    color: var(--color-text-hover);
     font-weight: var(--font-weight-normal);
+    font-size: 1.4rem;
 }
 
 
@@ -505,56 +563,64 @@
 }
 
 .question {
+    height: 7rem;
+    padding: 0 2rem;
+    margin-top: 2rem;
+    border-radius: 12px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 2rem;
-    margin-top: 2rem;
     cursor: pointer;
-    height: 7rem;
-    border-radius: 12px;
     color: var(--color-text-light);
     font-size: 1.8rem;
     font-weight: var(--font-weight-bold);
     background-color: var(--color-secondary);
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s, box-shadow 0.3s, border-radius 0.3s;
+}
+
+.question i {
+    margin-left: 0.3rem;
 }
 
 .question:hover {
-    box-shadow: 0 0 30px var(--color-secondary);
+    box-shadow: 0 0 20px var(--color-secondary);
 }
 
 .question.active {
-    background-color: var(--color-secondary);
-    box-shadow: 0 0 30px var(--color-secondary);
-    color: var(--color-text-light);
-    font-size: 1.8rem;
-    font-weight: var(--font-weight-bold);
+    box-shadow: 0 0 20px var(--color-secondary);
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
 }
 
 .answer {
-    height: 7rem;
     max-height: 0rem;
+    padding: 0 2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
     overflow: hidden;
-    padding: 0 2rem;
     border-bottom-right-radius: 16px;
     border-bottom-left-radius: 16px;
-    font-size: 1.6rem;
-    color: var(--color-text-dark);
-    font-weight: var(--font-weight-normal);
     background-color: var(--color-btn-light);
-    transition: max-height 0.3s ease;
+    box-shadow: 0 0 20px var(--color-secondary);
+    transition: max-height 0.3s, padding 0.3s;
 }
 
 .answer.active {
-    height: 7rem;
-    max-height: 20rem;
-    box-shadow: 0 0 30px var(--color-secondary);
+    max-height: 50rem;
+    padding: 2rem 2rem;
+}
+
+.answer p {
+    font-size: 1.6rem;
+    color: var(--color-text-dark);
+    font-weight: var(--font-weight-normal);
+}
+
+.answer a {
+    font-size: 1.6rem;
+    color: var(--color-secondary);
+    font-weight: var(--font-weight-normal);
 }
 
 .downarrow-icon {

@@ -55,6 +55,46 @@ faqQuestions.forEach((faqQuestion) => {
 
 
 
+// Category Buttons Listeners
+document.querySelectorAll('.btn-category').forEach(function (button) {
+  button.addEventListener('click', function () {
+    // Remove active class from all buttons
+    document.querySelectorAll('.btn-category').forEach(function (button) {
+      button.classList.remove('active');
+    });
+    // Add active class to clicked button
+    this.classList.add('active');
+
+    var category = this.getAttribute('data-category');
+    var portfolio = document.querySelectorAll('.portfolio-box');
+    if (category == 'all') {
+      portfolio.forEach(function (product) {
+        product.style.display = 'flex';
+        product.style.opacity = '0';
+        setTimeout(function () {
+          product.style.transition = 'opacity 0.3s, transform 0.3s, box-shadow 0.3s';
+          product.style.opacity = '1';
+        }, 0);
+      });
+    } else {
+      portfolio.forEach(function (product) {
+        if (product.getAttribute('data-category') == category) {
+          product.style.display = 'flex';
+          product.style.opacity = '0';
+          setTimeout(function () {
+            product.style.transition = 'opacity 0.3s, transform 0.3s, box-shadow 0.3s';
+            product.style.opacity = '1';
+          }, 0);
+        } else {
+          product.style.display = 'none';
+        }
+      });
+    }
+  });
+});
+
+
+
 // Scroll Reveal
 ScrollReveal({
   reset: false,
@@ -76,9 +116,6 @@ ScrollReveal().reveal('.services-title', { origin: 'left' });
 ScrollReveal().reveal('.services-payments', { origin: 'bottom' });
 
 ScrollReveal().reveal('.portfolio-title', { origin: 'top' });
-
-ScrollReveal().reveal('.faq-title', { origin: 'top' });
-ScrollReveal().reveal('.question', { origin: 'bottom', delay: 700 });
 
 
 
