@@ -69,10 +69,10 @@
 
 /* Category button Starting*/
 .btn-category {
-    background-color: rgba(1, 233, 254);
+    background-color: transparent;
+    color: var(--color-text-light);
     border: 2px solid rgba(1, 233, 254);
     box-shadow: 0 0 10px rgba(1, 233, 254, 0.75);
-    color: var(--color-dark);
     height: 4rem;
     width: fit-content;
     max-width: 100%;
@@ -85,14 +85,13 @@
 }
 
 .btn-category:hover {
-    background-color: transparent;
-    color: var(--color-text-light);
-    transform: scale(1.05);
+    background-color: rgba(1, 233, 254);
+    color: var(--color-dark);
 }
 
 .btn-category.active {
-    background-color: transparent;
-    color: var(--color-text-light);
+    background-color: var(--color-primary);
+    color: var(--color-dark);
 }
 
 /* Black Bar button and icon Starting*/
