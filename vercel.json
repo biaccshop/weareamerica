@@ -1,7 +1,19 @@
 {
-    "rewrites": [
-      { "source": "/home", "destination": "/index.html" },
-      { "source": "/tos", "destination": "/tos.html" },
-      { "source": "/*", "destination": "/404.html" }
+    "routes": [
+        {
+            "handle": "filesystem"
+        },
+        {
+            "src": "/home",
+            "dest": "/BiaccShop/index.html"
+        },
+        {
+            "src": "/tos",
+            "dest": "/BiaccShop/tos.html"
+        },
+        {
+            "src": "/",
+            "dest": "/BiaccShop/404.html"
+        }
     ]
 }
