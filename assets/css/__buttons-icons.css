@@ -90,7 +90,7 @@
 }
 
 .btn-category.active {
-    background-color: var(--color-primary);
+    background-color: rgba(1, 233, 254);
     color: var(--color-dark);
 }
 
