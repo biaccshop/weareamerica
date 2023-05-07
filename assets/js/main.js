@@ -1,3 +1,26 @@
+// URL Redirecting
+const express = require('express');
+const path = require('path');
+
+const app = express();
+
+app.get('/home', (req, res) => {
+  res.sendFile(path.join(__dirname, 'index.html'));
+});
+
+app.get('/tos', (req, res) => {
+  res.sendFile(path.join(__dirname, 'tos.html'));
+});
+
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, '404.html'));
+});
+
+app.listen(3000, () => {
+  console.log('Server is running on port 3000');
+});
+
+
 // Navbar anchor + hiding # in URL
 $('a[href^="#"]').on('click', function (event) {
   var target = $(this.getAttribute('href'));
