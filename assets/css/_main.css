@@ -753,8 +753,21 @@
     }
 
     /*  FAQ Section */
+    .faq-content h2 {
+        font-size: 3.2rem;
+        margin-bottom: 2rem;
+    }
+
     .faq-container {
         width: 100%;
+    }
+
+    .question {
+        font-size: 1.6rem;
+    }
+
+    .answer p, .answer a{
+        font-size: 1.6rem;
     }
 }
 
@@ -859,15 +872,20 @@
     }
 
     /*  FAQ Section */
+    .faq-content h2 {
+        font-size: 3rem;
+        margin-bottom: 2rem;
+    }
+
     .faq-container {
         width: 100%;
     }
 
-    .answer {
-        height: 10.5rem;
+    .question {
+        font-size: 1.4rem;
     }
 
-    .answer.active {
-        height: 10.5rem;
+    .answer p, .answer a{
+        font-size: 1.4rem;
     }
 }
