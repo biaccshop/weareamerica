@@ -752,6 +752,11 @@
         display: none;
     }
 
+    /* Portfolio section */
+    .portfolio-box:hover {
+        transform: scale(1);
+    }
+
     /*  FAQ Section */
     .faq-content h2 {
         font-size: 3.2rem;
@@ -766,7 +771,8 @@
         font-size: 1.6rem;
     }
 
-    .answer p, .answer a{
+    .answer p,
+    .answer a {
         font-size: 1.6rem;
     }
 }
@@ -871,6 +877,11 @@
         height: 2.7rem;
     }
 
+    /* Portfolio section */
+    .portfolio-box:hover {
+        transform: scale(1);
+    }
+
     /*  FAQ Section */
     .faq-content h2 {
         font-size: 3rem;
@@ -885,7 +896,8 @@
         font-size: 1.4rem;
     }
 
-    .answer p, .answer a{
+    .answer p,
+    .answer a {
         font-size: 1.4rem;
     }
 }
