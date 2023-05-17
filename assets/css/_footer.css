@@ -32,7 +32,7 @@
 	transition: 0.3s ease;
 }
 
-.footer-navigation a:hover {
+.footer a:hover {
 	color: var(--color-text-light);
 	text-shadow: 0 0 8px rgb(252, 252, 252);
 }
