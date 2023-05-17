@@ -32,11 +32,6 @@
 	transition: 0.3s ease;
 }
 
-.footer a:hover {
-	color: var(--color-text-light);
-	text-shadow: 0 0 8px rgb(252, 252, 252);
-}
-
 .footer-navigation i img {
 	height: 7rem;
 	width: auto;
@@ -86,6 +81,15 @@ a {
 	color: var(--color-text-dark);
 	font-weight: var(--font-weight-normal);
 	text-align: left;
+}
+
+.footer-copyright a {
+	transition: 0.3s ease;
+}
+
+.footer-copyright a:hover {
+	color: var(--color-text-light);
+	text-shadow: 0 0 8px rgb(252, 252, 252);
 }
 
 .footer-copyright .payment-methods {
