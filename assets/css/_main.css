@@ -621,6 +621,12 @@
     font-size: 1.6rem;
     color: var(--color-secondary);
     font-weight: var(--font-weight-normal);
+    transition: 0.3s ease;
+}
+
+.answer a:hover {
+    color: var(--color-primary);
+    text-shadow: 0 0 8px var(--color-primary);
 }
 
 .downarrow-icon {
