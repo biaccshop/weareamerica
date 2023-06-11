@@ -4,7 +4,7 @@
 	width: 100%;
 	background-color: var(--color-btn-dark);
 	border-bottom: 0.3rem solid var(--color-btn-dark);
-	box-shadow: 0 5rem 20rem rgba(1, 233, 254, 0.6);
+	box-shadow: 0 5rem 15rem rgba(1, 233, 254, 0.6);
 }
 
 .footer-navigation {

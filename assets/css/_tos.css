@@ -8,31 +8,54 @@
 
 .tos-content {
     width: 100%;
-    padding-bottom: 20rem;
+    margin: auto;
+    padding: 2.5rem;
+    margin-top: 2.5rem;
+    margin-bottom: 15rem;
+    background-color: var(--color-dark);
+    border: 2px solid var(--color-btn-dark);
+    border-radius: 16px;
 }
 
 .tos-content h1 {
     font-size: 1.8rem;
     font-weight: var(--font-weight-bold);
     color: var(--color-primary);
-    margin-bottom: 2rem;
-    padding-top: 5rem;
+    margin-bottom: 1rem;
 }
 
 .tos-content h2 {
-    font-size: 6rem;
+    font-size: 4rem;
     font-weight: var(--font-weight-black);
     line-height: 1;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
 }
 
 .tos-content p {
-    font-size: 1.8rem;
-    line-height: 1.5;
-    color: var(--color-text-dark);
+    font-size: 1.6rem;
+    line-height: 1.2;
+    color: var(--color-text-light);
+    font-weight: var(--font-weight-bold);
+    text-align: left;
+}
+
+.tos-content ol {
+    list-style: decimal;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.tos-content ol li {
+    color: var(--color-text-hover);
     font-weight: var(--font-weight-normal);
     text-align: left;
-    margin-bottom: 3rem;
+    margin-left: 5rem;
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+.tos-content ol li::marker {
+    color: var(--color-secondary);
 }
 
 
@@ -45,9 +68,22 @@
 
 /*  576px - 833px - Tablet Sections */
 @media screen and (min-width: 576px) and (max-width: 833px) {
+    
+    .tos-content h1 {
+        font-size: 1.6rem;
+    }
 
-    .tos .tos-content h2 {
-        font-size: 5rem;
+    .tos-content h2 {
+        font-size: 3rem;
+    }
+
+    .tos-content p {
+        font-size: 1.6rem;
+    }
+
+    .tos-content ol li {
+        font-size: 1.5rem;
+        margin-left: 3.5rem;
     }
 }
 
@@ -56,7 +92,20 @@
 /*  575px and Lower - Mobile Sections */
 @media screen and (max-width: 575px) {
 
-    .tos .tos-content h2 {
-        font-size: 3rem;
+    .tos-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .tos-content h2 {
+        font-size: 2.5rem;
+    }
+
+    .tos-content p {
+        font-size: 1.5rem;
+    }
+
+    .tos-content ol li {
+        font-size: 1.4rem;
+        margin-left: 1.5rem;
     }
 }
