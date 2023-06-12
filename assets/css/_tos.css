@@ -4,6 +4,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 100rem;
+    padding-top: 5rem;
 }
 
 .tos-content {

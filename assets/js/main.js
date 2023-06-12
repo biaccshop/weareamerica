@@ -106,17 +106,21 @@ ScrollReveal({
 ScrollReveal().reveal('.hero-content', { origin: 'bottom' });
 ScrollReveal().reveal('.hero-img', { origin: 'top' });
 
-ScrollReveal().reveal('.about-content h2, .about-content h3', { origin: 'left' });
-ScrollReveal().reveal('.about-img', { origin: 'right' });
+ScrollReveal().reveal('.about-content h2, .about-content h3', { origin: 'right' });
+ScrollReveal().reveal('.about-img', { origin: 'left' });
 ScrollReveal().reveal('.about-content .d1', { origin: 'bottom', delay: 700 });
 ScrollReveal().reveal('.about-content .d2', { origin: 'bottom', delay: 800 });
 ScrollReveal().reveal('.about-content .d3', { origin: 'bottom', delay: 900 });
 
-ScrollReveal().reveal('.services-title', { origin: 'left' });
-ScrollReveal().reveal('.services-payments', { origin: 'bottom' });
+ScrollReveal().reveal('.feedbacks-title', { origin: 'top' });
+
+ScrollReveal().reveal('.services-title', { origin: 'top' });
 
 ScrollReveal().reveal('.portfolio-title', { origin: 'top' });
 
+ScrollReveal().reveal('.faq', { origin: 'left' });
+
+ScrollReveal().reveal('.tos', { origin: 'left' });
 
 
 // Disable right-click

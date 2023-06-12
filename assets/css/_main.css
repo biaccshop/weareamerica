@@ -10,13 +10,13 @@
 
 #eclipse-left1 {
     position: absolute;
-    top: 1200px;
+    top: 1100px;
     left: 0;
 }
 
 #eclipse-right1 {
     position: absolute;
-    top: 200px;
+    top: 150px;
     right: 0;
 }
 
@@ -227,7 +227,7 @@
 .about-img {
     width: 50%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     align-items: center;
 }
 
@@ -239,17 +239,172 @@
 
 @keyframes FloatImage2 {
     0% {
-        transform: translateX(-2.5rem);
+        transform: translateY(-2.5rem);
     }
 
     50% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-2.5rem);
+    }
+}
+
+
+
+/* Feedbacks section */
+.feedbacks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10rem;
+}
+
+.feedbacks-title {
+    text-align: center;
+    padding-bottom: 5rem;
+}
+
+.feedbacks-title h3 {
+    font-size: 1.8rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-primary);
+}
+
+.feedbacks-title h2 {
+    font-size: 5rem;
+    font-weight: var(--font-weight-black);
+    color: var(--color-text-light);
+}
+
+
+
+.slider {
+    height: 25rem;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 10rem;
+    position: relative;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+
+.slider::before,
+.slider::after {
+    background: linear-gradient(to right, rgb(19, 21, 25) 0%, rgba(255, 255, 255, 0) 100%);
+    content: '';
+    height: 100%;
+    position: absolute;
+    width: 15%;
+    z-index: 2;
+}
+
+.slider::before {
+    left: 0;
+    top: 0;
+}
+
+.slider::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+}
+
+.slide-track {
+    display: flex;
+    width: calc(var(--slide-card-width) * var(--slide-card-count) * 2);
+    animation: scroll var(--slide-scroll-duration) linear infinite;
+}
+
+.slide-track:hover {
+    animation-play-state: paused;
+}
+
+@keyframes scroll {
+    0% {
         transform: translateX(0);
     }
 
     100% {
-        transform: translateX(-2.5rem);
+        transform: translateX(calc(var(--slide-card-width) * var(--slide-card-count) * -1));
     }
 }
+
+.slide {
+    height: var(--slide-height);
+    width: var(--slide-width);
+    display: flex;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+.slide-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: var(--slide-card-height);
+    width: var(--slide-card-width);
+    padding: 2.5rem 2.5rem;
+    border: 1px solid rgb(76, 76, 77);
+    border-radius: 24px;
+    background: linear-gradient(15deg, rgba(33, 36, 44, 1) 0%, rgba(30, 33, 40, 1) 61%, rgba(0, 145, 158, 0.25) 100%);
+    transition: 0.3s;
+}
+
+.slide-card:hover {
+    transform: scale(1.03);
+    border: 1px solid var(--color-secondary);
+    background-color: var(--color-btn-light);
+    box-shadow: 0 0 10px var(--color-secondary);
+}
+
+.slide-card .top {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.slide-card .top .left {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.slide-card .top .left .information {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1.5rem;
+    margin-top: -0.3rem;
+}
+
+.slide-card .top .left .information .name a {
+    font-weight: var(--font-weight-bold);
+    font-size: 1.6rem;
+}
+
+.slide-card .top .left .information .forum p {
+    color: var(--color-text-dark);
+    font-weight: var(--font-weight-bold);
+    font-size: 1.4rem;
+}
+
+.slide-card .review {
+    width: 100%;
+    height: 40%;
+    display: flex;
+}
+
+.slide-card .review p {
+    color: var(--color-text-dark);
+    font-weight: var(--font-weight-normal);
+    font-size: 1.6rem;
+}
+
 
 
 /* Services section */
@@ -262,7 +417,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: left;
+    align-items: center;
 }
 
 .services-title h3 {
@@ -383,6 +538,7 @@
 /* Portfolio section */
 .portfolio {
     padding: 10rem 0;
+    margin-bottom: 10rem;
 }
 
 .portfolio-top {
@@ -528,121 +684,6 @@
 
 
 
-/* FAQ section */
-.faq {
-    min-height: 95rem;
-    padding-top: 10rem;
-}
-
-.faq-content {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.faq-content h3 {
-    font-size: 1.6rem;
-    font-weight: var(--font-weight-black);
-    color: var(--color-primary);
-    margin-bottom: 1rem;
-}
-
-.faq-content h2 {
-    font-size: 4rem;
-    font-weight: var(--font-weight-black);
-    color: var(--color-text-light);
-    line-height: 1;
-    margin-bottom: 4rem;
-    text-align: center;
-}
-
-.faq-container {
-    width: 80%;
-}
-
-.question {
-    height: 7rem;
-    padding: 0 2rem;
-    margin-top: 2rem;
-    border-radius: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    cursor: pointer;
-    color: var(--color-text-light);
-    font-size: 1.8rem;
-    font-weight: var(--font-weight-bold);
-    background-color: var(--color-secondary);
-    transition: background-color 0.3s, box-shadow 0.3s, border-radius 0.3s;
-}
-
-.question i {
-    margin-left: 0.3rem;
-}
-
-.question:hover {
-    box-shadow: 0 0 20px var(--color-secondary);
-}
-
-.question.active {
-    box-shadow: 0 0 20px var(--color-secondary);
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
-}
-
-.answer {
-    max-height: 0rem;
-    padding: 0 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    overflow: hidden;
-    border-bottom-right-radius: 16px;
-    border-bottom-left-radius: 16px;
-    background-color: var(--color-btn-light);
-    box-shadow: 0 0 20px var(--color-secondary);
-    transition: max-height 0.3s, padding 0.3s;
-}
-
-.answer.active {
-    max-height: 50rem;
-    padding: 2rem 2rem;
-}
-
-.answer p {
-    font-size: 1.6rem;
-    color: var(--color-text-dark);
-    font-weight: var(--font-weight-normal);
-}
-
-.answer a {
-    font-size: 1.6rem;
-    color: var(--color-secondary);
-    font-weight: var(--font-weight-normal);
-    transition: 0.3s ease;
-}
-
-.answer a:hover {
-    color: var(--color-primary);
-    text-shadow: 0 0 8px var(--color-primary);
-}
-
-.downarrow-icon {
-    padding-bottom: 5px;
-    transition: transform 0.5s ease;
-}
-
-.question.active .downarrow-icon {
-    transform: translateY(-6px) rotate(180deg);
-    transform-origin: center;
-}
-
-
-
-
-
 /*  834px - 1068px - Laptop Sections */
 @media screen and (min-width: 834px) and (max-width: 1068px) {
 
@@ -740,6 +781,81 @@
         display: none;
     }
 
+    /* Feedbacks section */
+    .feedbacks {
+        padding-top: 5rem;
+    }
+
+    .feedbacks-title {
+        padding-bottom: 5rem;
+    }
+
+    .feedbacks-title h3 {
+        font-size: 1.6rem;
+    }
+
+    .feedbacks-title h2 {
+        font-size: 4rem;
+    }
+
+    .slider {
+        height: 15rem;
+        margin-bottom: 0rem;
+    }
+
+    .slide-track {
+        width: calc(27.5rem * var(--slide-card-count) * 2);
+        animation: scroll calc(var(--slide-scroll-duration) * 0.75) linear infinite;
+    }
+
+    @keyframes scroll {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(calc(27.5rem * var(--slide-card-count) * -1));
+        }
+    }
+
+    .slide {
+        height: 12rem;
+        width: 27.5rem;
+        padding: 0.75rem;
+    }
+
+    .slide-card {
+        height: 12rem;
+        width: 27.5rem;
+        padding: 1.5rem 1.5rem;
+    }
+
+    .slide-card .top .left .information {
+        margin-left: 1rem;
+        margin-top: -0.1rem;
+    }
+
+    .slide-card .top .left .information .name a {
+        font-size: 1.3rem;
+    }
+
+    .slide-card .top .left .information .forum p {
+        font-size: 1rem;
+    }
+
+    .slide-card .review p {
+        font-size: 1.1rem;
+    }
+
+    .vouchesavatar-icon {
+        width: 3.2rem;
+    }
+
+    .reviewstar-icon {
+        width: 1.2rem;
+        font-size: 1rem;
+    }
+
     /* Payments section */
     .payments {
         flex-direction: column;
@@ -761,25 +877,6 @@
     /* Portfolio section */
     .portfolio-box:hover {
         transform: scale(1);
-    }
-
-    /*  FAQ Section */
-    .faq-content h2 {
-        font-size: 3.2rem;
-        margin-bottom: 2rem;
-    }
-
-    .faq-container {
-        width: 100%;
-    }
-
-    .question {
-        font-size: 1.6rem;
-    }
-
-    .answer p,
-    .answer a {
-        font-size: 1.6rem;
     }
 }
 
@@ -850,6 +947,81 @@
         display: none;
     }
 
+    /* Feedbacks section */
+    .feedbacks {
+        padding-top: 0rem;
+    }
+
+    .feedbacks-title {
+        padding-bottom: 4rem;
+    }
+
+    .feedbacks-title h3 {
+        font-size: 1.2rem;
+    }
+
+    .feedbacks-title h2 {
+        font-size: 2.8rem;
+    }
+
+    .slider {
+        height: 15rem;
+        margin-bottom: 0rem;
+    }
+
+    .slide-track {
+        width: calc(22.5rem * var(--slide-card-count) * 2);
+        animation: scroll calc(var(--slide-scroll-duration) * 1.2) linear infinite;
+    }
+
+    @keyframes scroll {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(calc(22.5rem * var(--slide-card-count) * -1));
+        }
+    }
+
+    .slide {
+        height: 10rem;
+        width: 22.5rem;
+        padding: 0.5rem;
+    }
+
+    .slide-card {
+        height: 10rem;
+        width: 22.5rem;
+        padding: 1.25rem 1.25rem;
+    }
+
+    .slide-card .top .left .information {
+        margin-left: 0.75rem;
+        margin-top: -0.2rem;
+    }
+
+    .slide-card .top .left .information .name a {
+        font-size: 1rem;
+    }
+
+    .slide-card .top .left .information .forum p {
+        font-size: 0.8rem;
+    }
+
+    .slide-card .review p {
+        font-size: 0.8rem;
+    }
+
+    .vouchesavatar-icon {
+        width: 2.4rem;
+    }
+
+    .reviewstar-icon {
+        width: 1rem;
+        font-size: 0.8rem;
+    }
+
     /* Services section */
     .services-content .services-box {
         height: 33rem;
@@ -886,24 +1058,5 @@
     /* Portfolio section */
     .portfolio-box:hover {
         transform: scale(1);
-    }
-
-    /*  FAQ Section */
-    .faq-content h2 {
-        font-size: 3rem;
-        margin-bottom: 2rem;
-    }
-
-    .faq-container {
-        width: 100%;
-    }
-
-    .question {
-        font-size: 1.4rem;
-    }
-
-    .answer p,
-    .answer a {
-        font-size: 1.4rem;
     }
 }

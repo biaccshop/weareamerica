@@ -71,17 +71,6 @@ img {
     --color-text-hover: rgb(203, 203, 204);
     --color-btn-light: rgb(33, 36, 44);
     --color-btn-dark: rgb(30, 33, 40);
-    /* Gradient colors */
-    --color-gradient-1: linear-gradient(to right, rgb(243, 90, 246) -200%, rgb(48, 78, 235) -100%, rgb(243, 90, 246) 0%, rgb(48, 78, 235) 100%);
-    --color-gradient-2: linear-gradient(to right, rgb(255, 184, 0) -200%, rgb(243, 90, 246) -100%, rgb(255, 184, 0) 0%, rgb(243, 90, 246) 100%);
-    --color-gradient-3: linear-gradient(to right, rgb(255, 241, 116) -200%, rgb(255, 184, 0) -100%, rgb(255, 241, 116) 0%, rgb(255, 184, 0) 100%);
-    --color-gradient-4: linear-gradient(to right, rgb(48, 78, 235) -200%, rgb(65, 217, 251) -100%, rgb(48, 78, 235) 0%, rgb(65, 217, 251) 100%);
-    --color-gradient-5: linear-gradient(to right, rgb(65, 217, 251) -200%, rgb(153, 239, 131) -100%, rgb(65, 217, 251) 0%, rgb(153, 239, 131) 100%);
-    --color-gradient-6: linear-gradient(to right, rgb(153, 239, 131) -200%, rgb(255, 241, 116) -100%, rgb(153, 239, 131) 0%, rgb(255, 241, 116) 100%);
-    /* Other colors */
-    --color-success: #2ecc71;
-    --color-warning: #f1c40f;
-    --color-error: #e74c3c;
     /* Font weights */
     --font-weight-normal: 400;
     --font-weight-bold: 700;
@@ -89,6 +78,13 @@ img {
     /* Font families */
     --font-family-1: 'Lato', sans-serif;
     --font-family-2: 'Montserrat', sans-serif;
+    /* Slider Settings */
+    --slide-card-count: 5;
+    --slide-scroll-duration: 15s;
+    --slide-height: 16rem;
+    --slide-card-height: 16rem;
+    --slide-width: 45rem;
+    --slide-card-width: 45rem;
 }
 
 /* Roots End */
