@@ -12,7 +12,7 @@
     flex-direction: column;
 }
 
-.faq-content h3 {
+.faq-content h1 {
     font-size: 1.6rem;
     font-weight: var(--font-weight-black);
     color: var(--color-primary);
@@ -29,7 +29,7 @@
 }
 
 .faq-container {
-    width: 80%;
+    width: 70%;
 }
 
 .question {

@@ -20,7 +20,7 @@
 }
 
 .tos-content h1 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-weight: var(--font-weight-bold);
     color: var(--color-primary);
     margin-bottom: 1rem;
@@ -70,10 +70,6 @@
 
 /*  576px - 833px - Tablet Sections */
 @media screen and (min-width: 576px) and (max-width: 833px) {
-    
-    .tos-content h1 {
-        font-size: 1.6rem;
-    }
 
     .tos-content h2 {
         font-size: 3rem;

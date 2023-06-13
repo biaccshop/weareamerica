@@ -267,15 +267,17 @@
 }
 
 .feedbacks-title h3 {
-    font-size: 1.8rem;
-    font-weight: var(--font-weight-bold);
+    font-size: 1.6rem;
+    font-weight: var(--font-weight-black);
     color: var(--color-primary);
+    margin-bottom: 1rem;
 }
 
 .feedbacks-title h2 {
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: var(--font-weight-black);
     color: var(--color-text-light);
+    line-height: 1;
 }
 
 
@@ -790,14 +792,6 @@
         padding-bottom: 5rem;
     }
 
-    .feedbacks-title h3 {
-        font-size: 1.6rem;
-    }
-
-    .feedbacks-title h2 {
-        font-size: 4rem;
-    }
-
     .slider {
         height: 15rem;
         margin-bottom: 0rem;
@@ -954,14 +948,6 @@
 
     .feedbacks-title {
         padding-bottom: 4rem;
-    }
-
-    .feedbacks-title h3 {
-        font-size: 1.2rem;
-    }
-
-    .feedbacks-title h2 {
-        font-size: 2.8rem;
     }
 
     .slider {
