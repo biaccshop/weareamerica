@@ -79,8 +79,8 @@ img {
     --font-family-1: 'Lato', sans-serif;
     --font-family-2: 'Montserrat', sans-serif;
     /* Slider Settings */
-    --slide-card-count: 5;
-    --slide-scroll-duration: 15s;
+    --slide-card-count: 9;
+    --slide-scroll-duration: 27s;
     --slide-height: 16rem;
     --slide-card-height: 16rem;
     --slide-width: 45rem;
