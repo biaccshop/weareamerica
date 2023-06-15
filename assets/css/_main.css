@@ -299,7 +299,7 @@
     content: '';
     height: 100%;
     position: absolute;
-    width: 15%;
+    width: 7.5%;
     z-index: 2;
 }
 
@@ -349,7 +349,7 @@
     justify-content: space-between;
     height: var(--slide-card-height);
     width: var(--slide-card-width);
-    padding: 2.5rem 2.5rem;
+    padding: 2rem 2rem;
     border: 1px solid rgb(76, 76, 77);
     border-radius: 24px;
     background: linear-gradient(15deg, rgba(33, 36, 44, 1) 0%, rgba(30, 33, 40, 1) 61%, rgba(0, 145, 158, 0.25) 100%);
@@ -365,7 +365,7 @@
 
 .slide-card .top {
     width: 100%;
-    height: 60%;
+    height: 55%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -395,9 +395,37 @@
     font-size: 1.4rem;
 }
 
+.slide-card .top .right {
+    display: flex;
+    flex-direction: column;
+}
+
+.slide-card .top .right .stars {
+    display: flex;
+}
+
+.slide-card .top .right .verify {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 0.7rem;
+    padding-right: 0.4rem;
+}
+
+.slide-card .top .right .verify a {
+    color: var(--color-text-dark);
+    font-weight: var(--font-weight-normal);
+    font-size: 1.4rem;
+    transition: 0.3s ease;
+}
+
+.slide-card .top .right .verify a:hover {
+    color: var(--color-text-hover);
+	text-shadow: 0 0 4px rgb(252, 252, 252);
+}
+
 .slide-card .review {
     width: 100%;
-    height: 40%;
+    height: 45%;
     display: flex;
 }
 
@@ -841,12 +869,20 @@
         font-size: 1.1rem;
     }
 
+    .slide-card .top .right .verify {
+        margin-top: 0.6rem;
+    }
+    
+    .slide-card .top .right .verify a {
+        font-size: 1rem;
+    }
+
     .vouchesavatar-icon {
         width: 3.2rem;
     }
 
     .reviewstar-icon {
-        width: 1.2rem;
+        width: 1.4rem;
         font-size: 1rem;
     }
 
@@ -999,12 +1035,20 @@
         font-size: 0.8rem;
     }
 
+    .slide-card .top .right .verify {
+        margin-top: 0.4rem;
+    }
+    
+    .slide-card .top .right .verify a {
+        font-size: 0.8rem;
+    }
+
     .vouchesavatar-icon {
         width: 2.4rem;
     }
 
     .reviewstar-icon {
-        width: 1rem;
+        width: 1.1rem;
         font-size: 0.8rem;
     }
 
