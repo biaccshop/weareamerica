@@ -4,7 +4,6 @@
 	width: 100%;
 	background-color: var(--color-btn-dark);
 	border-bottom: 0.3rem solid var(--color-btn-dark);
-	box-shadow: 0 5rem 15rem rgba(1, 233, 254, 0.6);
 }
 
 .footer-navigation {
@@ -13,12 +12,12 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	border-bottom: 1px solid var(--color-text-dark);
+	border-bottom: 1px solid var(--color-btn-superlight);
 }
 
 .footer-navigation .item-title {
 	font-size: 1.7rem;
-	line-height: 1.7;
+	line-height: 2;
 	color: var(--color-text-light);
 	font-weight: var(--font-weight-bold);
 	text-align: left;
@@ -26,7 +25,7 @@
 
 .footer-navigation a {
 	font-size: 1.6rem;
-	line-height: 1.7;
+	line-height: 2;
 	color: var(--color-text-dark);
 	font-weight: var(--font-weight-bold);
 	transition: 0.3s ease;
@@ -41,6 +40,8 @@
 	height: 7rem;
 	width: auto;
 	display: flex;
+	margin-left: -0.8rem;
+	margin-bottom: 0.5rem;
 }
 
 .footer-navigation p {
@@ -80,8 +81,7 @@
 	justify-content: space-between;
 }
 
-.footer-copyright .copyright-text p,
-a {
+.footer-copyright .copyright-text p {
 	font-size: 1.6rem;
 	color: var(--color-text-dark);
 	font-weight: var(--font-weight-normal);
@@ -89,12 +89,15 @@ a {
 }
 
 .footer-copyright a {
+	font-size: 1.6rem;
+	color: var(--color-secondary);
+	font-weight: var(--font-weight-normal);
+	text-align: left;
 	transition: 0.3s ease;
 }
 
 .footer-copyright a:hover {
-	color: var(--color-text-light);
-	text-shadow: 0 0 8px rgb(252, 252, 252);
+	text-shadow: 0 0 8px var(--color-primary);
 }
 
 .footer-copyright .payment-methods {
@@ -103,21 +106,22 @@ a {
 	justify-content: space-between;
 }
 
-.footer-copyright .payment-methods i img {
+.footer-copyright .payment-methods .method {
+	height: 2.6rem;
+	width: auto;
 	margin-left: 1rem;
 }
-
 
 /*  834px - 1068px - Laptop Footer */
 @media screen and (min-width: 834px) and (max-width: 1068px) {
 
 	/* Navigation Section */
 	.footer-navigation .item-3 {
-		width: 5%;
+		width: 20%;
 	}
 
 	.footer-navigation .item-4 {
-		width: 35%;
+		width: 30%;
 	}
 }
 
@@ -136,16 +140,17 @@ a {
 		line-height: 2;
 	}
 
+	.footer-navigation i img {
+		height: 5rem;
+		margin-left: -0.5rem;
+	}
+
 	.footer-navigation p {
 		font-size: 1.4rem;
 	}
 
-	.footer-navigation i img {
-		height: 5rem;
-	}
-
 	.footer-navigation .item-3 {
-		display: none;
+		width: 10%;
 	}
 
 	.footer-navigation .item-4 {
@@ -162,7 +167,7 @@ a {
 		font-size: 1.4rem;
 	}
 
-	.footer-copyright .payment-methods i img {
+	.footer-copyright .payment-methods .method {
 		display: none;
 	}
 }
@@ -215,7 +220,7 @@ a {
 		font-size: 1.4rem;
 	}
 
-	.footer-copyright .payment-methods i img {
+	.footer-copyright .payment-methods .method {
 		display: none;
 	}
 }

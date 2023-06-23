@@ -67,6 +67,24 @@
     color: var(--color-dark);
 }
 
+/* Contact button Starting*/
+.btn-contact {
+    background-color: rgb(114, 137, 218);
+    box-shadow: 0 0 10px rgba(114, 137, 218, 0.75);
+    color: var(--color-text-light);
+    width: 24rem;
+}
+
+.btn-contact:hover {
+    background-color: rgb(78, 93, 148);
+    transform: scale(1.05);
+}
+
+.btn-contact:hover,
+.btn-contact:hover .discord-icon {
+    color: var(--color-text-hover);
+}
+
 /* Category button Starting*/
 .btn-category {
     background-color: transparent;
@@ -81,7 +99,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
 }
 
 .btn-category:hover {
@@ -116,6 +134,13 @@
 }
 
 /* Icons Starting */
+.line-icon {
+    height: 2.1rem;
+    width: 0.3rem;
+    margin-bottom: -0.4rem;
+    margin-right: 1.4rem;
+}
+
 .discord-icon {
     font-size: 1.6rem;
     color: var(--color-text-light);

@@ -15,6 +15,7 @@
     font-size: 1.8rem;
     font-weight: var(--font-weight-bold);
     color: var(--color-primary);
+    text-shadow: 0 0 12px var(--color-secondary);
     margin-bottom: 3rem;
 }
 
@@ -23,6 +24,7 @@
     font-weight: var(--font-weight-black);
     line-height: 1;
     margin-bottom: 4rem;
+    animation: BlinkingWhiteShadow 1.5s ease-in-out infinite;
 }
 
 .Errorpage-content p {

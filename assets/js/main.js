@@ -100,27 +100,40 @@ ScrollReveal({
   reset: false,
   distance: '200px',
   duration: 1500,
-  delay: 150
+  delay: 200
 });
 
-ScrollReveal().reveal('.hero-content', { origin: 'bottom' });
-ScrollReveal().reveal('.hero-img', { origin: 'top' });
+ScrollReveal().reveal('.hero-content', { origin: 'bottom', delay: 200 });
+ScrollReveal().reveal('.hero-img', { origin: 'top', delay: 200 });
 
-ScrollReveal().reveal('.about-content h2, .about-content h3', { origin: 'right' });
-ScrollReveal().reveal('.about-img', { origin: 'left' });
+ScrollReveal().reveal('.about-content h2, .about-content h3', { origin: 'right', delay: 200 });
+ScrollReveal().reveal('.about-img', { origin: 'left', delay: 200 });
 ScrollReveal().reveal('.about-content .d1', { origin: 'bottom', delay: 700 });
 ScrollReveal().reveal('.about-content .d2', { origin: 'bottom', delay: 800 });
 ScrollReveal().reveal('.about-content .d3', { origin: 'bottom', delay: 900 });
 
-ScrollReveal().reveal('.feedbacks-title', { origin: 'top' });
+ScrollReveal().reveal('.as-seen-on', { origin: 'bottom', distance: '0px', delay: 700 });
 
-ScrollReveal().reveal('.services-title', { origin: 'top' });
+ScrollReveal().reveal('.statistics', { origin: 'bottom', distance: '50px', delay: 500 });
 
-ScrollReveal().reveal('.portfolio-title', { origin: 'top' });
+ScrollReveal().reveal('.services .services-title', { origin: 'bottom', distance: '50px', delay: 200 });
+ScrollReveal().reveal('.services .services-content', { origin: 'bottom', distance: '50px', delay: 500 });
 
-ScrollReveal().reveal('.faq', { origin: 'left' });
+ScrollReveal().reveal('.feedbacks-title', { origin: 'bottom', distance: '50px', delay: 200 });
+ScrollReveal().reveal('.feedbacks .slider', { origin: 'bottom', distance: '0px', delay: 500 });
 
-ScrollReveal().reveal('.tos', { origin: 'left' });
+ScrollReveal().reveal('.contact .card', { origin: 'bottom', distance: '50px', delay: 500 });
+
+
+
+ScrollReveal().reveal('.portfolio-title', { origin: 'bottom', distance: '50px', delay: 200 });
+ScrollReveal().reveal('.portfolio .category-filter', { origin: 'bottom', distance: '0px', delay: 500 });
+ScrollReveal().reveal('.portfolio .portfolio-content', { origin: 'bottom', distance: '0px', delay: 900 });
+
+ScrollReveal().reveal('.faq-title', { origin: 'bottom', distance: '50px', delay: 200 });
+ScrollReveal().reveal('.faq-container', { origin: 'bottom', distance: '0px', delay: 500 });
+
+ScrollReveal().reveal('.tos', { origin: 'bottom', distance: '50px', delay: 200 });
 
 
 // Disable right-click

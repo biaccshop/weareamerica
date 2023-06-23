@@ -1,0 +1,86 @@
+/* Animations */
+@keyframes BlinkingWhiteShadow {
+    0% {
+        text-shadow: 0 0 12px var(--color-text-light);
+        ;
+    }
+
+    50% {
+        text-shadow: 0 0 0px var(--color-text-light);
+        ;
+    }
+
+    100% {
+        text-shadow: 0 0 12px var(--color-text-light);
+        ;
+    }
+}
+
+@keyframes BlinkingCyanShadow {
+    0% {
+        text-shadow: 0 0 12px var(--color-secondary);
+        ;
+    }
+
+    50% {
+        text-shadow: 0 0 0px var(--color-secondary);
+        ;
+    }
+
+    100% {
+        text-shadow: 0 0 12px var(--color-secondary);
+        ;
+    }
+}
+
+@keyframes FloatingHeroImage {
+    0% {
+        transform: translateY(-2.5rem);
+    }
+
+    50% {
+        transform: translateY(2.5rem);
+    }
+
+    100% {
+        transform: translateY(-2.5rem);
+    }
+}
+
+@keyframes FloatingAboutUsImage {
+    0% {
+        transform: translateY(-2.5rem);
+    }
+
+    50% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-2.5rem);
+    }
+}
+
+@keyframes ScrollingFeedbacksSlide {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(var(--slide-card-width) * var(--slide-card-count) * -1));
+    }
+}
+
+@keyframes FloatingContactImage {
+    0% {
+        transform: translateY(-1.25rem);
+    }
+
+    50% {
+        transform: translateY(1.25rem);
+    }
+
+    100% {
+        transform: translateY(-1.25rem);
+    }
+}

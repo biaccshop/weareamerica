@@ -11,7 +11,7 @@
 .navigation {
     z-index: 100;
     height: 9rem;
-    width: 120rem;
+    width: 129rem;
     border-radius: 50px;
     padding: 0 2.5rem;
     display: flex;
@@ -121,17 +121,22 @@
         top: 0;
         left: 0;
         width: 100%;
-        height: 8rem;
+        height: 6rem;
         padding: 0 2.5rem 0 1.5rem;
         border-radius: 0;
     }
 
     .navigation .logo {
-        height: 7rem;
+        height: 6rem;
+    }
+
+    .navigation #btn-discord {
+        padding: 0.8rem 1.2rem;
+        font-size: 1.4rem;
     }
 
     .nav-right {
-        width: 24.5rem;
+        width: 21.5rem;
     }
 }
 
@@ -157,13 +162,13 @@
         top: 0;
         left: 0;
         width: 100%;
-        height: 8rem;
+        height: 6rem;
         padding: 0 2.5rem 0 1.5rem;
         border-radius: 0;
     }
 
     .navigation .logo {
-        height: 7rem;
+        height: 6rem;
     }
 
     .navigation #btn-discord {

@@ -65,12 +65,13 @@ img {
     /* Colors */
     --color-primary: rgb(1, 233, 254);
     --color-secondary: rgb(0, 145, 158);
-    --color-dark: rgb(19, 21, 25);
-    --color-text-light: rgb(252, 252, 252);
+    --color-dark: rgb(23, 25, 30);
+    --color-btn-dark: rgb(30, 33, 40);
+    --color-btn-light: rgb(33, 36, 44);
+    --color-btn-superlight: rgb(52, 55, 63);
     --color-text-dark: rgb(140, 141, 143);
     --color-text-hover: rgb(203, 203, 204);
-    --color-btn-light: rgb(33, 36, 44);
-    --color-btn-dark: rgb(30, 33, 40);
+    --color-text-light: rgb(252, 252, 252);
     /* Font weights */
     --font-weight-normal: 400;
     --font-weight-bold: 700;
@@ -78,7 +79,7 @@ img {
     /* Font families */
     --font-family-1: 'Lato', sans-serif;
     --font-family-2: 'Montserrat', sans-serif;
-    /* Slider Settings */
+    /* FeedbacksSlider Settings */
     --slide-card-count: 10;
     --slide-scroll-duration: 30s;
     --slide-height: 16rem;

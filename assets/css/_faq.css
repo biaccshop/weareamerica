@@ -1,6 +1,6 @@
 /* FAQ section */
 .faq {
-    min-height: 100rem;
+    min-height: 90rem;
     padding-top: 10rem;
 }
 
@@ -16,6 +16,7 @@
     font-size: 1.6rem;
     font-weight: var(--font-weight-black);
     color: var(--color-primary);
+    text-shadow: 0 0 12px var(--color-secondary);
     margin-bottom: 1rem;
 }
 
@@ -26,6 +27,7 @@
     line-height: 1;
     margin-bottom: 4rem;
     text-align: center;
+    animation: BlinkingWhiteShadow 1.5s ease-in-out infinite;
 }
 
 .faq-container {
@@ -44,7 +46,8 @@
     color: var(--color-text-light);
     font-size: 1.8rem;
     font-weight: var(--font-weight-bold);
-    background-color: var(--color-secondary);
+    border: 2px solid var(--color-btn-superlight);
+    background: linear-gradient(200deg, rgba(1, 233, 254, 1) -100%, var(--color-btn-dark) 100%, rgba(1, 233, 254, 1) 50%);
     transition: background-color 0.3s, box-shadow 0.3s, border-radius 0.3s;
 }
 
@@ -53,11 +56,11 @@
 }
 
 .question:hover {
-    box-shadow: 0 0 20px var(--color-secondary);
+    box-shadow: 0 0 8px var(--color-secondary);
 }
 
 .question.active {
-    box-shadow: 0 0 20px var(--color-secondary);
+    box-shadow: 0 0 8px var(--color-secondary);
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
 }
@@ -72,7 +75,7 @@
     border-bottom-right-radius: 16px;
     border-bottom-left-radius: 16px;
     background-color: var(--color-btn-light);
-    box-shadow: 0 0 20px var(--color-secondary);
+    box-shadow: 0 0 8px var(--color-secondary);
     transition: max-height 0.3s, padding 0.3s;
 }
 
@@ -138,13 +141,18 @@
 /*  576px - 833px - Tablet Sections */
 @media screen and (min-width: 576px) and (max-width: 833px) {
 
+    .faq {
+        min-height: 80rem;
+        padding-top: 5rem;
+    }
+
     .faq-content h2 {
         font-size: 3.2rem;
         margin-bottom: 2rem;
     }
 
     .faq-container {
-        width: 100%;
+        width: 90%;
     }
 }
 
@@ -153,6 +161,11 @@
 /*  575px and Lower - Mobile Sections */
 @media screen and (max-width: 575px) {
         /*  FAQ Section */
+        .faq {
+            min-height: 85rem;
+            padding-top: 2.5rem;
+        }
+
         .faq-content h2 {
             font-size: 3rem;
             margin-bottom: 2rem;
