@@ -4,7 +4,6 @@
     clear: both;
 }
 
-/* Text Transforms */
 .text-uppercase {
     text-transform: uppercase;
 }
@@ -13,7 +12,6 @@
     text-transform: capitalize;
 }
 
-/* Displays */
 .hidden {
     display: none;
 }
@@ -26,7 +24,6 @@
     display: inline-flex;
 }
 
-/* Justify */
 .justify-between {
     justify-content: space-between;
 }
@@ -39,12 +36,10 @@
     justify-content: center;
 }
 
-/* Aligns */
 .align-center {
     align-items: center;
 }
 
-/* Paddings */
 .padding-left-4 {
     padding-left: 4rem;
 }
@@ -53,7 +48,6 @@
     padding-right: 2rem;
 }
 
-/* Background Colors for testing */
 .white {
     background-color: rgba(255, 255, 255, 0.1);
 }

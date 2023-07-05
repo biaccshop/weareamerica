@@ -1,4 +1,3 @@
-/* CSS Files */
 @import './__reboot.css';
 @import './__grid.css';
 @import './__utilities.css';
@@ -11,15 +10,9 @@
 @import './_tos.css';
 @import './_faq.css';
 @import './_portfolio.css';
-
-/* Fonts - Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Montserrat:wght@400;700;900&display=swap');
-
-/* Icons - Font Awesome */
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.js');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js');
-
-/* Sellix - Sellix Integration */
 @import url('https://cdn.sellix.io/static/css/embed.css');

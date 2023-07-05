@@ -1,4 +1,3 @@
-/* General site settings Starting */
 *,
 *::after,
 *::before {
@@ -56,13 +55,7 @@ img {
     pointer-events: none;
 }
 
-/* General site settings End */
-
-
-
-/* Root Starting */
 :root {
-    /* Colors */
     --color-primary: rgb(1, 233, 254);
     --color-secondary: rgb(0, 145, 158);
     --color-dark: rgb(23, 25, 30);
@@ -72,14 +65,11 @@ img {
     --color-text-dark: rgb(140, 141, 143);
     --color-text-hover: rgb(203, 203, 204);
     --color-text-light: rgb(252, 252, 252);
-    /* Font weights */
     --font-weight-normal: 400;
     --font-weight-bold: 700;
     --font-weight-black: 900;
-    /* Font families */
     --font-family-1: 'Lato', sans-serif;
     --font-family-2: 'Montserrat', sans-serif;
-    /* FeedbacksSlider Settings */
     --slide-card-count: 12;
     --slide-scroll-duration: 36s;
     --slide-height: 16rem;
@@ -88,11 +78,6 @@ img {
     --slide-card-width: 45rem;
 }
 
-/* Roots End */
-
-
-
-/* Scrollbar Starting */
 ::-webkit-scrollbar {
     width: 10px;
 }
@@ -111,11 +96,6 @@ img {
     background: var(--color-primary);
 }
 
-/* Scrollbar End */
-
-
-
-/* Font Setup Starting */
 html {
     font-size: 10px;
     font-family: var(--font-family-1);
@@ -150,26 +130,18 @@ ol {
     line-height: 1.5;
 }
 
-/* Font Setup End */
-
-
-
-/*  834px - 1068px - Laptop Fonts */
 @media screen and (min-width: 834px) and (max-width: 1068px) {
     body {
         font-size: 1.4rem;
     }
 }
 
-
-/*  576px - 833px - Tablet Fonts */
 @media screen and (min-width: 576px) and (max-width: 833px) {
     body {
         font-size: 1.1rem;
     }
 }
 
-/*  575px and Lower - Mobile Fonts */
 @media screen and (max-width: 575px) {
     body {
         font-size: 0.8rem;

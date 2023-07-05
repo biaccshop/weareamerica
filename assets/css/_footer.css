@@ -1,4 +1,3 @@
-/* 1069px and Upper - Desktop Footer */
 .footer {
 	height: auto;
 	width: 100%;
@@ -71,9 +70,6 @@
 	height: 16.5rem;
 }
 
-
-
-
 .footer-copyright {
 	height: 10rem;
 	display: flex;
@@ -112,10 +108,7 @@
 	margin-left: 1rem;
 }
 
-/*  834px - 1068px - Laptop Footer */
 @media screen and (min-width: 834px) and (max-width: 1068px) {
-
-	/* Navigation Section */
 	.footer-navigation .item-3 {
 		width: 20%;
 	}
@@ -125,11 +118,7 @@
 	}
 }
 
-
-/*  576px - 833px - Tablet Footer */
 @media screen and (min-width: 576px) and (max-width: 833px) {
-
-	/* Navigation Section */
 	.footer-navigation .item-title {
 		font-size: 1.6rem;
 		line-height: 2;
@@ -157,7 +146,6 @@
 		width: 40%;
 	}
 
-	/* Copyright Section */
 	.footer-copyright .copyright-text p {
 		font-size: 1.4rem;
 		padding-bottom: 1rem;
@@ -172,10 +160,7 @@
 	}
 }
 
-/*  575px and Lower - Mobile Footer */
 @media screen and (max-width: 575px) {
-
-	/* Navigation Section */
 	.footer-navigation {
 		align-items: center;
 		justify-content: center;
@@ -200,9 +185,7 @@
 	.footer-navigation .item-2 {
 		width: 50%;
 	}
-
-
-	/* Copyright Section */
+	
 	.footer-copyright .copyright-text {
 		width: 100%;
 		display: flex;

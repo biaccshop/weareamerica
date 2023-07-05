@@ -1,4 +1,3 @@
-/* Animations */
 @keyframes BlinkingWhiteShadow {
     0% {
         text-shadow: 0 0 12px var(--color-text-light);
