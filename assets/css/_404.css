@@ -1,3 +1,4 @@
+/* Errorpage section */
 .Errorpage {
     min-height: calc(100vh - 14rem);
     color: var(--color-text-light);
@@ -66,6 +67,9 @@
     }
 }
 
+
+
+/*  834px - 1068px - Laptop Sections */
 @media screen and (min-width: 834px) and (max-width: 1068px) {
     .Errorpage {
         padding: 0 0 10rem 0;
@@ -76,6 +80,9 @@
     }
 }
 
+
+
+/*  576px - 833px - Tablet Sections */
 @media screen and (min-width: 576px) and (max-width: 833px) {
 
     .Errorpage {
@@ -111,6 +118,9 @@
     }
 }
 
+
+
+/*  575px and Lower - Mobile Sections */
 @media screen and (max-width: 575px) {
 
     .Errorpage {

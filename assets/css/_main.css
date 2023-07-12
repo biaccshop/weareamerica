@@ -1,5 +1,6 @@
 /* 1069px and Upper - Desktop Sections */
 
+/* Visuals Starting */
 #eclipse-top {
     position: absolute;
     top: -150px;
@@ -28,6 +29,9 @@
     z-index: -20;
 }
 
+
+
+/* Hero Section */
 .hero {
     padding: 5rem 0 10rem 0;
     color: var(--color-text-light);
@@ -84,6 +88,9 @@
     animation: FloatingHeroImage 3s ease-in-out infinite;
 }
 
+
+
+/* As Seen On section */
 .as-seen-on {
     width: 100%;
     padding-top: 10rem;
@@ -118,6 +125,9 @@
     transition: 0.3s ease-in-out;
 }
 
+
+
+/* Statistics Section */
 .statistics {
     padding-top: 10rem;
     padding-bottom: 10rem;
@@ -136,7 +146,7 @@
     flex-direction: row;
     justify-content: space-between;
     border-radius: 16px;
-    border: 2px solid var(--color-btn-superlight);
+    border: 2px solid var(--color-border);
     background: linear-gradient(15deg, var(--color-btn-dark) 0%, rgba(30, 33, 40, 1) 61%, rgba(0, 145, 158, 0.25) 100%);
     gap: 4rem;
 }
@@ -180,6 +190,9 @@
     text-align: center;
 }
 
+
+
+/* About section */
 .about {
     padding: 10rem 0;
     min-height: 74rem;
@@ -268,6 +281,9 @@
     animation: FloatingAboutUsImage 3s ease-in-out infinite;
 }
 
+
+
+/* Services section */
 .services {
     padding: 10rem 0;
     color: var(--color-text-light);
@@ -316,7 +332,7 @@
     flex: 0 0 35rem;
     padding: 0 3rem;
     border-radius: 16px;
-    border: 2px solid var(--color-btn-superlight);
+    border: 2px solid var(--color-border);
     background-color: var(--color-btn-dark);
     transition: 0.5s;
 }
@@ -353,6 +369,9 @@
     margin-top: 2rem;
 }
 
+
+
+/* Feedbacks section */
 .feedbacks {
     display: flex;
     flex-direction: column;
@@ -442,7 +461,7 @@
     height: var(--slide-card-height);
     width: var(--slide-card-width);
     padding: 2rem 2rem;
-    border: 1px solid rgb(76, 76, 77);
+    border: 2px solid var(--color-border);
     border-radius: 24px;
     background: linear-gradient(15deg, var(--color-dark) 0%, rgba(30, 33, 40, 1) 61%, rgba(0, 145, 158, 0.25) 100%);
     transition: 0.3s;
@@ -527,6 +546,9 @@
     font-size: 1.6rem;
 }
 
+
+
+/* Contact Section */
 .contact {
     padding-top: 10rem;
     padding-bottom: 10rem;
@@ -545,7 +567,7 @@
     flex-direction: row;
     justify-content: space-between;
     border-radius: 16px;
-    border: 2px solid var(--color-btn-superlight);
+    border: 2px solid var(--color-border);
     background: linear-gradient(199deg, rgba(1, 233, 254, 1) -100%, var(--color-btn-dark) 100%, rgba(1, 233, 254, 1) 50%);
 }
 
@@ -607,6 +629,7 @@
         font-size: 60%;
     }
 
+    /* Hero Section */
     .hero {
         padding: 5rem 0 10rem 0;
     }
@@ -622,6 +645,7 @@
         height: auto;
     }
 
+    /* As Seen On Section */
     .as-seen-on {
         padding-top: 5rem;
         padding-bottom: 5rem;
@@ -635,6 +659,7 @@
         width: calc((100% - 18rem) / 4);
     }
 
+    /* Statistics Section */
     .statistics {
         padding-top: 5rem;
         padding-bottom: 5rem;
@@ -652,6 +677,7 @@
         font-size: 1.6rem;
     }
 
+    /* About section */
     .about-content {
         padding-right: 2rem;
     }
@@ -661,6 +687,7 @@
         height: auto;
     }
 
+    /*  Services Section */
     .services-content {
         gap: 5rem;
     }
@@ -670,6 +697,7 @@
         padding: 0 2rem;
     }
 
+    /* Contact Section */
     .contact .card {
         padding: 0 4rem;
     }
@@ -701,6 +729,7 @@
 /*  576px - 833px - Tablet Sections */
 @media screen and (min-width: 576px) and (max-width: 833px) {
 
+    /* Visuals Starting */
     #eclipse-top,
     #eclipse-left1,
     #eclipse-right1,
@@ -708,6 +737,7 @@
         display: none;
     }
 
+    /* Hero Section */
     .hero {
         padding: 0 0 10rem 0;
     }
@@ -729,6 +759,7 @@
         width: 100%;
     }
 
+    /* As Seen On Section */
     .as-seen-on {
         padding-top: 2.5rem;
         padding-bottom: 5rem;
@@ -742,6 +773,7 @@
         width: calc((100% - 10rem) / 2);
     }
 
+    /* Statistics Section */
     .statistics {
         padding-top: 5rem;
         padding-bottom: 5rem;
@@ -756,6 +788,7 @@
         font-size: 3rem;
     }
 
+    /* About section */
     .about {
         padding: 5rem 0;
         min-height: 0rem;
@@ -771,6 +804,7 @@
         display: none;
     }
 
+    /* Services section */
     .services {
         padding-top: 5rem;
         padding-bottom: 10rem;
@@ -786,6 +820,7 @@
         padding: 0 3rem;
     }
 
+    /* Feedbacks section */
     .feedbacks {
         padding-top: 2.5rem;
         padding-bottom: 2.5rem;
@@ -857,6 +892,7 @@
         font-size: 1rem;
     }
 
+    /* Contact Section */
     .contact .card {
         height: 24rem;
         padding: 0 2.5rem;
@@ -897,6 +933,7 @@
 /*  575px and Lower - Mobile Sections */
 @media screen and (max-width: 575px) {
 
+    /* Visuals Starting */
     #eclipse-top,
     #eclipse-left1,
     #eclipse-right1,
@@ -904,6 +941,7 @@
         display: none;
     }
 
+    /* Hero Section */
     .hero {
         padding: 0 0 5rem 0;
     }
@@ -929,6 +967,7 @@
         width: 100%;
     }
 
+    /* As Seen On Section */
     .as-seen-on {
         padding-top: 2.5rem;
         padding-bottom: 2.5rem;
@@ -943,6 +982,7 @@
         width: calc((100% - 4rem) / 2);
     }
 
+    /* Statistics Section */
     .statistics {
         padding-top: 2.5rem;
         padding-bottom: 2.5rem;
@@ -969,6 +1009,7 @@
         font-size: 1.1rem;
     }
 
+    /* About section */
     .about {
         padding-top: 5rem;
         padding-bottom: 0rem;
@@ -989,6 +1030,7 @@
         display: none;
     }
 
+    /* Services section */
     .services {
         padding-top: 5rem;
         padding-bottom: 5rem;
@@ -1004,6 +1046,7 @@
         padding: 0 2rem;
     }
 
+    /* Feedbacks section */
     .feedbacks {
         padding-top: 2.5rem;
         padding-bottom: 2.5rem;
@@ -1075,6 +1118,7 @@
         font-size: 0.8rem;
     }
 
+    /* Contact Section */
     .contact {
         padding-top: 5rem;
         padding-bottom: 5rem;

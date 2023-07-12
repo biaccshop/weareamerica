@@ -1,3 +1,4 @@
+/* 1069px and Upper - Desktop Header */
 .header {
     height: 14rem;
     width: 100%;
@@ -75,6 +76,8 @@
     font-weight: var(--font-weight-black);
 }
 
+
+/*  834px - 1068px - Laptop Header */
 @media screen and (min-width: 834px) and (max-width: 1068px) {
 
     #btn-blackbar {
@@ -95,6 +98,8 @@
     }
 }
 
+
+/*  576px - 833px - Tablet Header */
 @media screen and (min-width: 576px) and (max-width: 833px) {
 
     #btn-blackbar {
@@ -135,6 +140,7 @@
     }
 }
 
+/*  575px and Lower - Mobile Header */
 @media screen and (max-width: 575px) {
 
     #btn-blackbar {

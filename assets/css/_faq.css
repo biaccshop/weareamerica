@@ -1,3 +1,4 @@
+/* FAQ section */
 .faq {
     min-height: 90rem;
     padding-top: 10rem;
@@ -45,7 +46,7 @@
     color: var(--color-text-light);
     font-size: 1.8rem;
     font-weight: var(--font-weight-bold);
-    border: 2px solid var(--color-btn-superlight);
+    border: 2px solid var(--color-border);
     background: linear-gradient(200deg, rgba(1, 233, 254, 1) -100%, var(--color-btn-dark) 100%, rgba(1, 233, 254, 1) 50%);
     transition: background-color 0.3s, box-shadow 0.3s, border-radius 0.3s;
 }
@@ -132,9 +133,14 @@
     transform-origin: center;
 }
 
+/*  834px - 1068px - Laptop Sections */
 @media screen and (min-width: 834px) and (max-width: 1068px) {}
 
+
+
+/*  576px - 833px - Tablet Sections */
 @media screen and (min-width: 576px) and (max-width: 833px) {
+
     .faq {
         min-height: 80rem;
         padding-top: 5rem;
@@ -150,7 +156,11 @@
     }
 }
 
+
+
+/*  575px and Lower - Mobile Sections */
 @media screen and (max-width: 575px) {
+        /*  FAQ Section */
         .faq {
             min-height: 85rem;
             padding-top: 2.5rem;

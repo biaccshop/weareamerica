@@ -1,3 +1,4 @@
+/* Button */
 .btn {
     display: inline-block;
     padding: 1.2rem 1.8rem;
@@ -11,6 +12,7 @@
     cursor: pointer;
 }
 
+/* Discord button Starting*/
 .btn-discord {
     background-color: rgb(114, 137, 218);
     box-shadow: 0 0 10px rgba(114, 137, 218, 0.75);
@@ -27,6 +29,7 @@
     color: var(--color-text-hover);
 }
 
+/* Get Started button Starting*/
 .btn-getstarted {
     background-color: rgba(1, 233, 254);
     border: 2px solid rgba(1, 233, 254);
@@ -45,6 +48,7 @@
     color: var(--color-text-light);
 }
 
+/* Order Now button Starting*/
 .btn-ordernow {
     background-color: transparent;
     border: 2px solid rgba(1, 233, 254);
@@ -63,6 +67,7 @@
     color: var(--color-dark);
 }
 
+/* Contact button Starting*/
 .btn-contact {
     background-color: rgb(114, 137, 218);
     box-shadow: 0 0 10px rgba(114, 137, 218, 0.75);
@@ -80,6 +85,7 @@
     color: var(--color-text-hover);
 }
 
+/* Category button Starting*/
 .btn-category {
     background-color: transparent;
     color: var(--color-text-light);
@@ -106,6 +112,7 @@
     color: var(--color-dark);
 }
 
+/* Black Bar button and icon Starting*/
 #btn-blackbar {
     display: none;
     cursor: pointer;
@@ -126,6 +133,7 @@
     font-size: 3rem;
 }
 
+/* Icons Starting */
 .line-icon {
     height: 2.1rem;
     width: 0.3rem;
@@ -161,6 +169,7 @@
 
 .vouchesavatar-icon {
     border-radius: 50%;
+    border: 2px solid var(--color-border);
     width: 4rem;
     height: auto;
 }

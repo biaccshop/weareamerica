@@ -1,3 +1,4 @@
+/* Tos section */
 .tos {
     color: var(--color-text-light);
     display: flex;
@@ -60,10 +61,15 @@
     color: var(--color-secondary);
 }
 
+
+/*  834px - 1068px - Laptop Sections */
 @media screen and (min-width: 834px) and (max-width: 1068px) {
 
 }
 
+
+
+/*  576px - 833px - Tablet Sections */
 @media screen and (min-width: 576px) and (max-width: 833px) {
 
     .tos {
@@ -86,6 +92,9 @@
     }
 }
 
+
+
+/*  575px and Lower - Mobile Sections */
 @media screen and (max-width: 575px) {
 
     .tos {

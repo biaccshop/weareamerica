@@ -1,3 +1,4 @@
+/* Portfolio section */
 .portfolio {
     padding: 10rem 0;
 }
@@ -155,17 +156,29 @@
     font-size: 1.4rem;
 }
 
+
+/*  834px - 1068px - Laptop Sections */
 @media screen and (min-width: 834px) and (max-width: 1068px) {
 
 }
 
+
+
+/*  576px - 833px - Tablet Sections */
 @media screen and (min-width: 576px) and (max-width: 833px) {
+
+    /* Portfolio section */
     .portfolio-box:hover {
         transform: scale(1);
     }
 }
 
+
+
+/*  575px and Lower - Mobile Sections */
 @media screen and (max-width: 575px) {
+
+    /* Portfolio section */
     .portfolio-box:hover {
         transform: scale(1);
     }

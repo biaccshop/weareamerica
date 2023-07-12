@@ -1,1 +1,155 @@
-$('a[href^="#"]').on("click",function(t){var e=$(this.getAttribute("href"));e.length&&(t.preventDefault(),$("html, body").stop().animate({scrollTop:e.offset().top},300))}),$(document).ready(function(){var t=!1;$("#btn-blackbar, .nav-blackbar-item").click(function(){t?($("body").css("overflow","auto"),$("#black-bar").slideUp(),$("#btn-blackbar").removeClass("active"),$("#blackbarbutton-icon").removeClass("fa-xmark").addClass("fa-bars"),t=!1):($("body").css("overflow","hidden"),$("#black-bar").slideDown(),$("#btn-blackbar").addClass("active"),$("#blackbarbutton-icon").removeClass("fa-bars").addClass("fa-xmark"),t=!0)})});const faqQuestions=document.querySelectorAll(".faq-container .question");function ctrlShiftKey(t,e){return t.ctrlKey&&t.shiftKey&&t.keyCode===e.charCodeAt(0)}faqQuestions.forEach(t=>{t.addEventListener("click",()=>{faqQuestions.forEach(e=>{if(e!==t&&e.classList.contains("active")){let o=e.nextElementSibling;o.classList.remove("active"),e.classList.remove("active")}});let e=t.nextElementSibling;e.classList.toggle("active"),t.classList.toggle("active")})}),document.querySelectorAll(".btn-category").forEach(function(t){t.addEventListener("click",function(){document.querySelectorAll(".btn-category").forEach(function(t){t.classList.remove("active")}),this.classList.add("active");var t=this.getAttribute("data-category"),e=document.querySelectorAll(".portfolio-box");"all"==t?e.forEach(function(t){t.style.display="flex",t.style.opacity="0",setTimeout(function(){t.style.transition="opacity 0.3s, transform 0.3s, box-shadow 0.3s",t.style.opacity="1"},0)}):e.forEach(function(e){e.getAttribute("data-category")==t?(e.style.display="flex",e.style.opacity="0",setTimeout(function(){e.style.transition="opacity 0.3s, transform 0.3s, box-shadow 0.3s",e.style.opacity="1"},0)):e.style.display="none"})})}),ScrollReveal({reset:!1,distance:"200px",duration:1500,delay:200}),ScrollReveal().reveal(".hero-content",{origin:"bottom",delay:200}),ScrollReveal().reveal(".hero-img",{origin:"top",delay:200}),ScrollReveal().reveal(".about-content h2, .about-content h3",{origin:"right",delay:200}),ScrollReveal().reveal(".about-img",{origin:"left",delay:200}),ScrollReveal().reveal(".about-content .d1",{origin:"bottom",delay:700}),ScrollReveal().reveal(".about-content .d2",{origin:"bottom",delay:800}),ScrollReveal().reveal(".about-content .d3",{origin:"bottom",delay:900}),ScrollReveal().reveal(".as-seen-on",{origin:"bottom",distance:"0px",delay:700}),ScrollReveal().reveal(".statistics",{origin:"bottom",distance:"50px",delay:500}),ScrollReveal().reveal(".services .services-title",{origin:"bottom",distance:"50px",delay:200}),ScrollReveal().reveal(".services .services-content",{origin:"bottom",distance:"50px",delay:500}),ScrollReveal().reveal(".feedbacks-title",{origin:"bottom",distance:"50px",delay:200}),ScrollReveal().reveal(".feedbacks .slider",{origin:"bottom",distance:"0px",delay:500}),ScrollReveal().reveal(".contact .card",{origin:"bottom",distance:"50px",delay:500}),ScrollReveal().reveal(".portfolio-title",{origin:"bottom",distance:"50px",delay:200}),ScrollReveal().reveal(".portfolio .category-filter",{origin:"bottom",distance:"0px",delay:500}),ScrollReveal().reveal(".portfolio .portfolio-content",{origin:"bottom",distance:"0px",delay:900}),ScrollReveal().reveal(".faq-title",{origin:"bottom",distance:"50px",delay:200}),ScrollReveal().reveal(".faq-container",{origin:"bottom",distance:"0px",delay:500}),ScrollReveal().reveal(".tos",{origin:"bottom",distance:"50px",delay:200}),document.addEventListener("contextmenu",t=>t.preventDefault()),document.onkeydown=t=>{if(123===event.keyCode||ctrlShiftKey(t,"I")||ctrlShiftKey(t,"J")||ctrlShiftKey(t,"C")||t.ctrlKey&&85===t.keyCode)return!1};
+// Navbar anchor + hiding # in URL
+$('a[href^="#"]').on('click', function (event) {
+  var target = $(this.getAttribute('href'));
+  if (target.length) {
+    event.preventDefault();
+    $('html, body').stop().animate({
+      scrollTop: target.offset().top
+    }, 300);
+  }
+});
+
+
+
+// Black Bar toggle
+$(document).ready(function () {
+  var menuOpen = false;
+
+  $("#btn-blackbar, .nav-blackbar-item").click(function () {
+    if (!menuOpen) {
+      $("body").css("overflow", "hidden");
+      $("#black-bar").slideDown();
+      $("#btn-blackbar").addClass("active");
+      $("#blackbarbutton-icon").removeClass("fa-bars").addClass("fa-xmark");
+      menuOpen = true;
+    } else {
+      $("body").css("overflow", "auto");
+      $("#black-bar").slideUp();
+      $("#btn-blackbar").removeClass("active");
+      $("#blackbarbutton-icon").removeClass("fa-xmark").addClass("fa-bars");
+      menuOpen = false;
+    }
+  });
+});
+
+
+
+// FAQ section
+const faqQuestions = document.querySelectorAll(".faq-container .question");
+
+faqQuestions.forEach((faqQuestion) => {
+  faqQuestion.addEventListener("click", () => {
+    faqQuestions.forEach((otherQuestion) => {
+      if (otherQuestion !== faqQuestion && otherQuestion.classList.contains("active")) {
+        const otherAnswer = otherQuestion.nextElementSibling;
+        otherAnswer.classList.remove("active");
+        otherQuestion.classList.remove("active");
+      }
+    });
+
+    const answer = faqQuestion.nextElementSibling;
+    answer.classList.toggle("active");
+    faqQuestion.classList.toggle("active");
+  });
+});
+
+
+
+// Category Buttons Listeners
+document.querySelectorAll('.btn-category').forEach(function (button) {
+  button.addEventListener('click', function () {
+    // Remove active class from all buttons
+    document.querySelectorAll('.btn-category').forEach(function (button) {
+      button.classList.remove('active');
+    });
+    // Add active class to clicked button
+    this.classList.add('active');
+
+    var category = this.getAttribute('data-category');
+    var portfolio = document.querySelectorAll('.portfolio-box');
+    if (category == 'all') {
+      portfolio.forEach(function (product) {
+        product.style.display = 'flex';
+        product.style.opacity = '0';
+        setTimeout(function () {
+          product.style.transition = 'opacity 0.3s, transform 0.3s, box-shadow 0.3s';
+          product.style.opacity = '1';
+        }, 0);
+      });
+    } else {
+      portfolio.forEach(function (product) {
+        if (product.getAttribute('data-category') == category) {
+          product.style.display = 'flex';
+          product.style.opacity = '0';
+          setTimeout(function () {
+            product.style.transition = 'opacity 0.3s, transform 0.3s, box-shadow 0.3s';
+            product.style.opacity = '1';
+          }, 0);
+        } else {
+          product.style.display = 'none';
+        }
+      });
+    }
+  });
+});
+
+
+
+// Scroll Reveal
+ScrollReveal({
+  reset: false,
+  distance: '200px',
+  duration: 1500,
+  delay: 200
+});
+
+ScrollReveal().reveal('.hero-content', { origin: 'bottom', delay: 200 });
+ScrollReveal().reveal('.hero-img', { origin: 'top', delay: 200 });
+
+ScrollReveal().reveal('.about-content h2, .about-content h3', { origin: 'right', delay: 200 });
+ScrollReveal().reveal('.about-img', { origin: 'left', delay: 200 });
+ScrollReveal().reveal('.about-content .d1', { origin: 'bottom', delay: 700 });
+ScrollReveal().reveal('.about-content .d2', { origin: 'bottom', delay: 800 });
+ScrollReveal().reveal('.about-content .d3', { origin: 'bottom', delay: 900 });
+
+ScrollReveal().reveal('.as-seen-on', { origin: 'bottom', distance: '0px', delay: 700 });
+
+ScrollReveal().reveal('.statistics', { origin: 'bottom', distance: '50px', delay: 500 });
+
+ScrollReveal().reveal('.services .services-title', { origin: 'bottom', distance: '50px', delay: 200 });
+ScrollReveal().reveal('.services .services-content', { origin: 'bottom', distance: '50px', delay: 500 });
+
+ScrollReveal().reveal('.feedbacks-title', { origin: 'bottom', distance: '50px', delay: 200 });
+ScrollReveal().reveal('.feedbacks .slider', { origin: 'bottom', distance: '0px', delay: 500 });
+
+ScrollReveal().reveal('.contact .card', { origin: 'bottom', distance: '50px', delay: 500 });
+
+
+
+ScrollReveal().reveal('.portfolio-title', { origin: 'bottom', distance: '50px', delay: 200 });
+ScrollReveal().reveal('.portfolio .category-filter', { origin: 'bottom', distance: '0px', delay: 500 });
+ScrollReveal().reveal('.portfolio .portfolio-content', { origin: 'bottom', distance: '0px', delay: 900 });
+
+ScrollReveal().reveal('.faq-title', { origin: 'bottom', distance: '50px', delay: 200 });
+ScrollReveal().reveal('.faq-container', { origin: 'bottom', distance: '0px', delay: 500 });
+
+ScrollReveal().reveal('.tos', { origin: 'bottom', distance: '50px', delay: 200 });
+
+
+// Disable right-click
+document.addEventListener('contextmenu', (e) => e.preventDefault());
+function ctrlShiftKey(e, keyCode) {
+    return e.ctrlKey && e.shiftKey && e.keyCode === keyCode.charCodeAt(0);
+}
+
+// Disable F12, Ctrl + Shift + I, Ctrl + Shift + J, Ctrl + U
+document.onkeydown = (e) => {
+    if (
+        event.keyCode === 123 ||
+        ctrlShiftKey(e, 'I') ||
+        ctrlShiftKey(e, 'J') ||
+        ctrlShiftKey(e, 'C') ||
+        (e.ctrlKey && e.keyCode === 'U'.charCodeAt(0))
+    )
+        return false;
+};
