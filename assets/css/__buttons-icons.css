@@ -12,34 +12,33 @@
     cursor: pointer;
 }
 
-/* Discord button Starting*/
-.btn-discord {
-    background-color: rgb(114, 137, 218);
-    box-shadow: 0 0 10px rgba(114, 137, 218, 0.75);
-    color: var(--color-text-light);
+/* Header button Starting*/
+.btn-header {
+    background: var(--color-linear-1-2);
+    box-shadow: 0 0 10px rgba(1, 233, 254, 0.75);
+    color: var(--color-dark);
 }
 
-.btn-discord:hover {
-    background-color: rgb(78, 93, 148);
+.btn-header:hover {
+    background: var(--color-linear-1);
     transform: scale(1.05);
 }
 
-.btn-discord:hover,
-.btn-discord:hover .discord-icon {
-    color: var(--color-text-hover);
+.btn-header:hover,
+.btn-header:hover .rightarrow-icon {
+    color: var(--color-text-light);
 }
 
 /* Get Started button Starting*/
 .btn-getstarted {
-    background-color: rgba(1, 233, 254);
-    border: 2px solid rgba(1, 233, 254);
+    background: var(--color-linear-1-2);
     box-shadow: 0 0 10px rgba(1, 233, 254, 0.75);
     color: var(--color-dark);
     width: 19.5rem;
 }
 
 .btn-getstarted:hover {
-    background-color: transparent;
+    background: var(--color-linear-1);
     transform: scale(1.05);
 }
 
@@ -50,21 +49,53 @@
 
 /* Order Now button Starting*/
 .btn-ordernow {
-    background-color: transparent;
-    border: 2px solid rgba(1, 233, 254);
+    position: relative;
+    background: var(--color-linear-1);
     box-shadow: 0 0 10px rgba(1, 233, 254, 0.75);
     color: var(--color-text-light);
+    overflow: hidden;
     width: 19.5rem;
 }
 
+.btn-ordernow span {
+    position: relative;
+}
+
 .btn-ordernow:hover {
-    background-color: rgba(1, 233, 254);
+    box-shadow: 0 0 15px var(--color-secondary);
     transform: scale(1.05);
 }
 
 .btn-ordernow:hover,
 .btn-ordernow:hover .cart-icon {
     color: var(--color-dark);
+}
+
+.btn-ordernow::before,
+.btn-ordernow::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.btn-ordernow::before {
+    content: "";
+    background: var(--color-dark);
+    width: 120%;
+    left: -10%;
+    transform: skew(30deg);
+    transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+
+.btn-ordernow:hover::before {
+    transform: translate3d(100%, 0, 0);
+}
+
+.btn-ordernow:active {
+    transform: scale(0.95);
 }
 
 /* Contact button Starting*/
@@ -103,12 +134,12 @@
 }
 
 .btn-category:hover {
-    background-color: rgba(1, 233, 254);
+    background: var(--color-linear-1-2);
     color: var(--color-dark);
 }
 
 .btn-category.active {
-    background-color: rgba(1, 233, 254);
+    background: var(--color-linear-1-2);
     color: var(--color-dark);
 }
 
@@ -182,7 +213,9 @@
 }
 
 .footerheart-icon {
-    color: var(--color-secondary);
+    background: var(--color-linear-1-2);
+    -webkit-background-clip: text;
+    color: transparent;
     font-size: 1.3rem;
     margin: 0 0.3rem;
 }

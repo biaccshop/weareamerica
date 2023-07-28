@@ -11,11 +11,12 @@
     width: 50%;
 }
 
-.Errorpage-content h1 {
+.Errorpage-content h3 {
     font-size: 1.8rem;
     font-weight: var(--font-weight-bold);
-    color: var(--color-primary);
-    text-shadow: 0 0 12px var(--color-secondary);
+    background: var(--color-linear-1-2);
+    -webkit-background-clip: text;
+    color: transparent;
     margin-bottom: 3rem;
 }
 
@@ -94,7 +95,7 @@
         width: 100%;
     }
 
-    .Errorpage-content h1 {
+    .Errorpage-content h3 {
         font-size: 1.8rem;
         text-align: center;
     }
@@ -132,7 +133,7 @@
         width: 100%;
     }
 
-    .Errorpage-content h1 {
+    .Errorpage-content h3 {
         font-size: 1.8rem;
         text-align: center;
     }

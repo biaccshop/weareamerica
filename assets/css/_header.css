@@ -1,5 +1,83 @@
 /* 1069px and Upper - Desktop Header */
+.announcement {
+    height: auto;
+    width: 100%;
+    padding: 0 2rem;
+    background: var(--color-linear-1-2);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.announcement .content {
+    width: 99%;
+}
+
+.announcement .right {
+    width: 1%;
+}
+
+.announcement .content p {
+    padding: 1.5rem 1rem 1.5rem 0;
+    font-size: 1.6rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-dark);
+    text-align: center;
+}
+
+.announcement .content a {
+    display: inline-block;
+    position: relative;
+    margin-left: 2rem;
+    font-size: 1.7rem;
+    font-weight: var(--font-weight-black);
+    color: var(--color-dark);
+    transition: 0.5s ease;
+}
+    
+.announcement .content a:hover {
+    color: var(--color-dark);
+    text-shadow: 0 0 16px var(--color-dark);
+}
+.announcement .content a::after {
+    content: "";
+    position: absolute;
+    bottom: -0.3rem;
+    left: 0;
+    right: 0;
+    height: 2px;
+    border-radius: 50%;
+    background: var(--color-dark);
+    transform-origin: left;
+    transform: scaleX(0);
+    transition: transform 0.3s;
+}
+.announcement .content a:hover::after {
+    transform: scaleX(1);
+}
+
+.announcement .right .announcement-close {
+    padding: 0;
+    margin: 0;
+    color: var(--color-dark);
+    font-size: 2.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.announcement .right .announcement-close:hover,
+.announcement .right .announcement-close:focus {
+    text-decoration: none;
+    cursor: pointer;
+    text-shadow: 0 0 16px var(--color-dark);
+}
+
+
+
 .header {
+    z-index: 99;
     height: 14rem;
     width: 100%;
     padding: 0 4rem;
@@ -28,8 +106,12 @@
     display: flex;
 }
 
+.navigation .navbar {
+    display: flex;
+    gap: 4rem;
+}
+
 .navigation .navbar a {
-    margin-left: 4rem;
     font-size: 1.7rem;
     color: var(--color-text-dark);
     font-weight: var(--font-weight-bold);
@@ -65,12 +147,11 @@
     flex-direction: column;
     flex-wrap: wrap;
     align-items: flex-start;
-    padding: 5rem 1rem;
+    padding: 5rem 5rem;
 }
 
 #nav-blackbar a {
     line-height: 2;
-    margin-left: 4rem;
     font-size: 2.4rem;
     color: var(--color-text-light);
     font-weight: var(--font-weight-black);
@@ -94,7 +175,7 @@
     }
 
     .nav-right {
-        width: 24.5rem;
+        width: 22rem;
     }
 }
 
@@ -108,7 +189,10 @@
     }
 
     .header {
-        height: 8rem;
+        position: sticky;
+        top: 0;
+        left: 0;
+        height: 6rem;
         padding: 0;
     }
 
@@ -117,9 +201,6 @@
     }
 
     .navigation {
-        position: fixed;
-        top: 0;
-        left: 0;
         width: 100%;
         height: 6rem;
         padding: 0 2.5rem 0 1.5rem;
@@ -130,13 +211,13 @@
         height: 6rem;
     }
 
-    .navigation #btn-discord {
+    .navigation .btn-header {
         padding: 0.8rem 1.2rem;
         font-size: 1.4rem;
     }
 
     .nav-right {
-        width: 21.5rem;
+        width: 18.5rem;
     }
 }
 
@@ -148,8 +229,23 @@
         display: block;
     }
 
+    #nav-blackbar {
+        padding: 4rem 3rem;
+    }
+    
+    #nav-blackbar a {
+        font-size: 2rem;
+    }
+
+    .announcement p {
+        font-size: 1.4rem;
+    }
+
     .header {
-        height: 8rem;
+        position: sticky;
+        top: 0;
+        left: 0;
+        height: 6rem;
         padding: 0;
     }
 
@@ -158,9 +254,6 @@
     }
 
     .navigation {
-        position: fixed;
-        top: 0;
-        left: 0;
         width: 100%;
         height: 6rem;
         padding: 0 2.5rem 0 1.5rem;
@@ -171,7 +264,7 @@
         height: 6rem;
     }
 
-    .navigation #btn-discord {
+    .navigation .btn-header {
         display: none;
     }
 }

@@ -18,20 +18,21 @@
     border-radius: 16px;
 }
 
-.tos-content h1 {
-    font-size: 1.6rem;
-    font-weight: var(--font-weight-bold);
-    color: var(--color-primary);
-    text-shadow: 0 0 12px var(--color-secondary);
-    margin-bottom: 1rem;
-}
-
 .tos-content h2 {
     font-size: 4rem;
     font-weight: var(--font-weight-black);
     line-height: 1;
     margin-bottom: 2rem;
     animation: BlinkingWhiteShadow 1.5s ease-in-out infinite;
+}
+
+.tos-content h3 {
+    font-size: 1.6rem;
+    font-weight: var(--font-weight-bold);
+    background: var(--color-linear-1-2);
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-bottom: 2rem;
 }
 
 .tos-content p {
@@ -103,12 +104,12 @@
         padding-bottom: 5rem;
     }
 
-    .tos-content h1 {
-        font-size: 1.5rem;
-    }
-
     .tos-content h2 {
         font-size: 2.5rem;
+    }
+
+    .tos-content h3 {
+        font-size: 1.5rem;
     }
 
     .tos-content p {
