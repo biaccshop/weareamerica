@@ -674,13 +674,6 @@
     color: var(--color-text-hover);
 }
 
-.contact-buttons {
-    background-color: red;
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
-}
-
 .contact .card-right .img-avatar {
     height: 46rem;
     width: auto;
