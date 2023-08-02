@@ -1,0 +1,94 @@
+/* 1069px and Upper - Desktop Header */
+.announcement {
+    height: auto;
+    width: 100%;
+    padding: 0 2rem;
+    background: var(--color-linear-1);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.announcement .content {
+    width: 99%;
+}
+
+.announcement .right {
+    width: 1%;
+}
+
+.announcement .content p {
+    padding: 1.5rem 1rem 1.5rem 0;
+    font-size: 1.7rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-dark);
+    text-align: center;
+}
+
+.announcement .content a {
+    display: inline-block;
+    position: relative;
+    margin-left: 2rem;
+    font-size: 1.7rem;
+    font-weight: var(--font-weight-black);
+    color: var(--color-dark);
+    transition: 0.5s ease;
+}
+    
+.announcement .content a:hover {
+    color: var(--color-dark);
+    text-shadow: 0 0 16px var(--color-dark);
+}
+.announcement .content a::after {
+    content: "";
+    position: absolute;
+    bottom: -0.3rem;
+    left: 0;
+    right: 0;
+    height: 2px;
+    border-radius: 50%;
+    background: var(--color-dark);
+    transform-origin: left;
+    transform: scaleX(0);
+    transition: transform 0.3s;
+}
+.announcement .content a:hover::after {
+    transform: scaleX(1);
+}
+
+.announcement .right .announcement-close {
+    padding: 0;
+    margin: 0;
+    color: var(--color-dark);
+    font-size: 2.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.announcement .right .announcement-close:hover,
+.announcement .right .announcement-close:focus {
+    text-decoration: none;
+    cursor: pointer;
+    text-shadow: 0 0 16px var(--color-dark);
+}
+
+
+/*  834px - 1068px - Laptop Header */
+@media screen and (min-width: 834px) and (max-width: 1068px) {
+}
+
+/*  576px - 833px - Tablet Header */
+@media screen and (min-width: 576px) and (max-width: 833px) {
+    .announcement .content p {
+        font-size: 1.5rem;
+    }
+}
+
+/*  575px and Lower - Mobile Header */
+@media screen and (max-width: 575px) {
+    .announcement p {
+        font-size: 1.4rem;
+    }
+}
