@@ -83,11 +83,11 @@ $(document).ready(function () {
   if (modalClosedFlag === null) {
     modal.css("display", "block");
   }
-  modal.on("click", ".close", function () {
+  modal.on("click", ".modal-close", function () {
     modal.css("display", "none");
     setModalClosed(); // Add the flag value to localStorage when the modal is closed.
   });
-  modal.on("click", "a", function () {
+  modal.on("click", ".modal-content a", function () {
     modal.css("display", "none");
     setModalClosed(); // Add the flag value to localStorage when the modal is closed.
   });
