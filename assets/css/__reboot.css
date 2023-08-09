@@ -63,8 +63,8 @@ img {
 /* Root Starting */
 :root {
     /* Colors */
-    --color-primary: rgb(1, 233, 254);
-    --color-secondary: rgb(0, 145, 158);
+    --color-primary: #01e9fe;
+    --color-secondary: #00919e;
     --color-border: rgb(42, 45, 51);
     --color-dark: rgb(23, 25, 30);
     --color-btn-dark: rgb(27, 30, 36);
