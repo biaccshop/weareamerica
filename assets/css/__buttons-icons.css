@@ -205,6 +205,15 @@
     height: auto;
 }
 
+.vouchname-icon {
+    vertical-align: top;
+    position: relative;
+    top: 1px;
+    width: 2rem;
+    height: 2rem;
+    margin-left: 0.25rem;
+}
+
 .reviewstar-icon {
     width: 2rem;
     height: auto;
