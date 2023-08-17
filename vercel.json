@@ -8,7 +8,6 @@
     { "source": "/rules", "destination": "/tos.html" },
     { "source": "/terms-of-service", "destination": "/tos.html" },
     { "source": "/terms", "destination": "/tos.html" },
-    { "source": "/rules", "destination": "/tos.html" },
     { "source": "/privacy-policy", "destination": "/privacypolicy.html" },
     { "source": "/privacypolicy", "destination": "/privacypolicy.html" },
     { "source": "/privacy", "destination": "/privacypolicy.html" },
